@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Admin UI Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
+    />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts from fonts.google.com -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> -->
+
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard-pp.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-kit.css" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/demo/demo.css" rel="stylesheet" />
+    <!-- CSS Just for Customising purpose -->
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+
+
+    <!-- Related css to this page -->
+
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar sidebar-custom" data-color="#9a7f37">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+            <div class="logo">
+                <a href="#" class="simple-text logo-mini">
+                    <img src="../assets/img/eureka-logo.png" class="img-responsive" alt="Image">
+                </a>
+                <a href="#" class="simple-text logo-normal">
+                    Exolve
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav nav-custom">
+                    <li class="">
+                        <a href="../examples/dashboard.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#componentsExamples" aria-expanded="true">
+                            <i class="now-ui-icons education_atom"></i>
+                            <p>Components
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="componentsExamples">
+                            <ul class="nav">
+                                <li>
+                                    <a href="buttons.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">TYpography</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Buttons</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="slider.html">
+                                        <span class="sidebar-mini-icon">SP</span>
+                                        <span class="sidebar-normal">Slider & Progress Bar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="alert.html">
+                                        <span class="sidebar-mini-icon">A</span>
+                                        <span class="sidebar-normal">Alert</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="panel.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Panel</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#formsExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Forms
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="formsExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="form-element.html">
+                                        <span class="sidebar-mini-icon">FE</span>
+                                        <span class="sidebar-normal">Form Elements</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="form-Validations.html">
+                                        <span class="sidebar-mini-icon">FV</span>
+                                        <span class="sidebar-normal">Form Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="WizardValid.html">
+                                        <span class="sidebar-mini-icon">WV</span>
+                                        <span class="sidebar-normal">Wizard + Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="wysiwyg.html">
+                                        <span class="sidebar-mini-icon">W</span>
+                                        <span class="sidebar-normal">WYSIWYG Editor</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Form-plugin.html">
+                                        <span class="sidebar-mini-icon">FP</span>
+                                        <span class="sidebar-normal">Form Plugins</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="notification.html">
+                            <i class="now-ui-icons ui-1_bell-53"></i>
+                            <p>Notification</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Icons</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#tableExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_bullet-list-67"></i>
+                            <p>Tables
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="tableExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="simple-table.html">
+                                        <span class="sidebar-mini-icon">ST</span>
+                                        <span class="sidebar-normal">Simple Table</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="datatable.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Datatable</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#chartExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons business_chart-pie-36"></i>
+                            <p>Charts
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="chartExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="flow-chart.html">
+                                        <span class="sidebar-mini-icon">FC</span>
+                                        <span class="sidebar-normal">Flow Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="morris-chart.html">
+                                        <span class="sidebar-mini-icon">MC</span>
+                                        <span class="sidebar-normal">Morris Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="jquery-spark.html">
+                                        <span class="sidebar-mini-icon">JS</span>
+                                        <span class="sidebar-normal">JQuery Sparklines</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#galleryExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>Gallery
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="galleryExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="picture.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Picture</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="videos.html">
+                                        <span class="sidebar-mini-icon">V</span>
+                                        <span class="sidebar-normal">Video</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#file-uploadExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>File Uploader
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="file-uploadExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="dropzone.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Dropzone</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="multiple-file.html">
+                                        <span class="sidebar-mini-icon">MF</span>
+                                        <span class="sidebar-normal">Multiple File Uploader</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#mapExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons location_pin"></i>
+                            <p>Map
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="mapExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="google-map.html">
+                                        <span class="sidebar-mini-icon">GM</span>
+                                        <span class="sidebar-normal">Google Map</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="vector-map.html">
+                                        <span class="sidebar-mini-icon">VM</span>
+                                        <span class="sidebar-normal">Vector Map</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#pageExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Pages
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse show" id="pageExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="profile.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="timeline.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">Timeline</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mail.html">
+                                        <span class="sidebar-mini-icon">M</span>
+                                        <span class="sidebar-normal">Mail</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="invoice.html">
+                                        <span class="sidebar-mini-icon">I</span>
+                                        <span class="sidebar-normal">Invoice</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login-resgiter.html">
+                                        <span class="sidebar-mini-icon">LR</span>
+                                        <span class="sidebar-normal">Login & Register</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="search.html">
+                                        <span class="sidebar-mini-icon">S</span>
+                                        <span class="sidebar-normal">Search</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blank.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Blank</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-404.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 404</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-500.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 500</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- Sidebar -->
+
+
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <!-- BreadCrumb -->
+                        <ul class="breadcrumb breadcrumb-custom">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="search.html" class="breadcrumb-active">Search</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                </span>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="now-ui-icons media-2_sound-wave"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Stats</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons location_world"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Some Actions</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Notifications 1</a>
+                                    <a class="dropdown-item" href="#">Notifications 2</a>
+                                    <a class="dropdown-item" href="#">Notifications 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Account</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Messages
+                                        <span class="badge badge-gold">23</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">Sign out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-sm panel-header-custom">
+                <!-- <canvas id="bigDashboardChart"></canvas> -->
+            </div>
+            <div class="content content-custom">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="title">Search Results</h5>
+                        <p>Find anything in admin panel...</p>
+                    </div>
+                    <div class="card-body card-body-search">
+                        <form action="#" class="search-form">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class='form-group'>
+                                        <input class="form-control" type="text" placeholder="Terms" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class='form-group'>
+                                        <select class="form-control">
+                                            <option value="">--Select Condition--</option>
+                                            <option value="">All of the word</option>
+                                            <option value="">Any of the word</option>
+                                            <option value="">The exact phrase</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class='form-group'>
+                                        <select class="form-control">
+                                            <option value="">--Per Page--</option>
+                                            <option value="">10</option>
+                                            <option value="">20</option>
+                                            <option value="">30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-1">
+                                    <button class="btn btn-danger no-margin" type="button">
+                                        <i class="fa fa-search"></i> Search
+                                    </button>
+                                </div>
+                            </div>
+                            <span class="text-muted">About 45 results (0.40 seconds)</span>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="title">Search results for 'Admin'</h5>
+                        <hr>
+                        <div class="search-result">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h4 class="bold">
+                                        <a href="#" class="title danger">
+                                            Admin - Responsive Admin Template
+                                            <i class="fa fa-link grey"></i>
+                                        </a>
+                                    </h4>
+                                    <a href="#" class="search-link">
+                                        https://admin.google.com/
+                                    </a>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, obcaecati consequuntur aspernatur neque voluptatum mollitia
+                                        eaque tenetur ea tempora itaque dolore incidunt explicabo voluptate quaerat at reprehenderit iste iusto asperiores?
+                                    </p>
+                                    <div class="pull-left">
+                                        <span class="grey">Publish on Nov 24, 2015</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <h3>53.2 K</h3>
+                                    </div>
+                                    <span id="compositeline-big">4,1,5,7,9,9,8,7,6,6,4,7,8,4,3,2,2,5,6,7</span>
+                                    <div class="pull-right">
+                                        <div class="pull-right">
+                                            <div class="search-option padding-r-l-15 grey">
+                                                <a href="#" class="padding-10 grey">
+                                                    <i class="fa fa-tag"></i> Category</a>
+                                                <a href="#" class="padding-10 grey">
+                                                    <i class="fa fa-bar-chart"></i> Performance</a>
+                                                <a href="#" class="padding-10 grey">
+                                                    <i class="fa fa-exchange"></i> Options</a>
+                                                <a href="#" class="padding-10 grey">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="search-result">
+                            <h4 class="bold">
+                                <a href="#" class="title danger">
+                                    Exolve Admin - Responsive Admin Dashboard Template
+                                </a>
+                            </h4>
+                            <img src="../assets/img/gallery/a2.jpg" width="120" alt="image" class="pull-left img-flat margin-r-l-5">
+                            <a href="#" class="search-link">
+                                https://www.google.com/work/apps/business/products/admin/
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, ut, quis, molestias dolor nobis doloremque eos distinctio
+                                perferendis alias aspernatur quam natus necessitatibus fugiat quo nostrum ipsum tempore. Expedita eveniet impedit
+                                dolorum unde rerum temporibus.
+                            </p>
+                            <div class="row">
+                                <div class="pull-left padding-r-l-15">
+                                    <span class="grey">Publish on Nov 24, 2015</span>
+                                </div>
+                                <div class="pull-right">
+                                    <div class="search-option padding-r-l-15 grey">
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-tag"></i> Category</a>
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-bar-chart"></i> Performance</a>
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-exchange"></i> Options</a>
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-bars"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="search-result">
+                            <h4 class="bold">
+                                <a href="#" class="title danger">
+                                    Responsive Admin Dashboard Template
+                                </a>
+                            </h4>
+                            <div class="piechart pull-left" data-percent="75">
+                                <span class="percent">75%</span>
+                            </div>
+                            <a href="#" class="search-link">
+                                https://books.google.com/books?isbn=0596554265
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, reprehenderit, cumque, quas, voluptatibus expedita aspernatur
+                                alias enim laboriosam eum sunt perspiciatis a pariatur dignissimos eligendi repellat harum hic!
+                            </p>
+                            <div class="row">
+                                <div class="pull-left padding-r-l-15">
+                                    <span class="grey">Publish on Nov 24, 2015</span>
+                                </div>
+                                <div class="pull-right">
+                                    <div class="search-option padding-r-l-15 grey">
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-tag"></i> Category</a>
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-bar-chart"></i> Performance</a>
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-exchange"></i> Options</a>
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-bars"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="search-result">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h4 class="bold">
+                                        <a href="#" class="title danger">
+                                            Exolve - Responsive Admin Template
+                                        </a>
+                                    </h4>
+                                    <a href="#" class="search-link">
+                                        https://www.facebook.com/Google/
+                                        <span id="inline">5,6,7,9,9,5,3,2,2,4,6,7</span>
+                                    </a>
+                                    <p>
+                                        Google Inc. is an American multinational technology company specializing in Internet-related services and products. These
+                                        include online advertising technologies, search, cloud computing, and software.
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="well-search">
+                                        <strong>Exolve Tech.</strong>
+                                        <br>
+                                        <strong>CEO:</strong> Peter Ogedengbe
+                                        <br>
+                                        <strong>Headquarters:</strong> Sabo, Yaba, Lagos State
+                                        <br>
+                                        <strong>Founders:</strong> Peter Ogedengbe
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="pull-right padding-r-l-15">
+                                    <span class="grey">Publish on Nov 24, 2015</span>
+                                </div>
+                                <div class="pull-left">
+                                    <div class="search-option padding-r-l-15 grey">
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-tag"></i> Category</a>
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-bar-chart"></i> Performance</a>
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-exchange"></i> Options</a>
+                                        <a href="#" class="padding-10 grey">
+                                            <i class="fa fa-bars"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <ul class="pagination pagination-danger">
+                            <li class="page-item">
+                                <a class="page-link" href="#link" aria-label="Previous">
+                                    <span aria-hidden="true">
+                                        <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#link">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#link">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#link">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#link">4</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#link">5</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#link" aria-label="Next">
+                                    <span aria-hidden="true">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </span>
+                        
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chart JS -->
+<script src="../assets/js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/now-ui-dashboard.js?v=1.0.1"></script>
+<script src="../assets/js/now-ui-kit.js"></script>
+<script src="../assets/js/custom.js"></script>
+<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/demo/demo.js"></script>
+
+<!-- Bootstrap Plugins -->
+<script type="text/javascript" src="../assets/plugins/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="../assets/plugins/bootstrap-switch.js"></script>
+<script type="text/javascript" src="../assets/plugins/jquery.sharrre.js"></script>
+<script type="text/javascript" src="../assets/plugins/nouislider.min.js"></script>
+
+<!-- Related JavaScript Library to This Pagee -->
+<script type="text/javascript" src="../assets/vendors/jquery-sparkline/js/jquery.sparkline.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/easy-pie-chart/js/jquery.easypiechart.min.js"></script>
+
+<!-- Plugins Script -->
+<script type="text/javascript">
+    $('#compositeline-big').sparkline('html', {
+        fillColor: false,
+        changeRangeMin: 0,
+        chartRangeMax: 10,
+        width: '100%',
+        height: '78px',
+        spotRadius: '5',
+        lineWidth: '3',
+        borderWidth: '4',
+        lineColor: '#2b5c59',
+    });
+    $('#compositeline-big').sparkline([6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7, 4, 1, 5, 7, 9, 9, 8, 7, 6], {
+        composite: true,
+        fillColor: false,
+        lineColor: 'red',
+        changeRangeMin: 0,
+        chartRangeMax: 10,
+        spotRadius: '5',
+        lineColor: '#3a6965'
+    });
+
+    $("#inline").sparkline('html', {
+        type: 'line',
+        width: '40px'
+    });
+
+    $('#compositebar').sparkline('html', {
+        type: 'bar',
+        barColor: '#aaf',
+        width: '100%',
+        height: '100%',
+    });
+    $('#compositebar').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7], {
+        composite: true,
+        fillColor: false,
+        lineColor: 'red',
+        width: '100%',
+        height: '100%',
+    });
+
+    $('.piechart').easyPieChart({
+        size: 60
+    })
+
+</script>
+
+
+
+<script>
+
+
+
+</script>
+
+</html>

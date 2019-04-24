@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Admin UI Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
+    />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts from fonts.google.com -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> -->
+
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.glyph.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard-pp.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-kit.css" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/demo/demo.css" rel="stylesheet" />
+    <!-- CSS Just for Customising purpose -->
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+
+
+    <!-- Related css to this page -->
+    <link rel="stylesheet" href="../assets/vendors/x-editable/css/bootstrap-editable.min.css">
+    <link rel="stylesheet" href="../assets/vendors/select2/css/select2.min.css">
+    <link rel="stylesheet" href="../assets/vendors/typeaheadjs/css/typeahead.js-bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendors/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="../assets/vendors/jasny-bootstrap/css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendors/bootstrap-tagsinput/css/bootstrap-tagsinput.min.css">
+    <link rel="stylesheet" href="../assets/vendors/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+    <link rel="stylesheet" href="../assets/vendors/clockpicker/css/bootstrap-clockpicker.min.css">
+    <link rel="stylesheet" href="../assets/vendors/wysihtml5/css/bootstrap-wysihtml5-0.0.2.min.css">
+    <link rel="stylesheet" href="../assets/vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+
+    <style>
+        /* Because Summernote and CKEditor overlap with each other, 
+            * we are using this style for disable hover top toolbar CKEditor. 
+            * We don't recommend using these editors together unless use this style
+        */
+
+        #cke_2_toolbox {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar sidebar-custom" data-color="#9a7f37">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+            <div class="logo">
+                <a href="#" class="simple-text logo-mini">
+                    <img src="../assets/img/eureka-logo.png" class="img-responsive" alt="Image">
+                </a>
+                <a href="#" class="simple-text logo-normal">
+                    Exolve
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav nav-custom">
+                    <li class="">
+                        <a href="../examples/dashboard.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#componentsExamples" aria-expanded="true">
+                            <i class="now-ui-icons education_atom"></i>
+                            <p>Components
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="componentsExamples">
+                            <ul class="nav">
+                                <li>
+                                    <a href="buttons.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">TYpography</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Buttons</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="slider.html">
+                                        <span class="sidebar-mini-icon">SP</span>
+                                        <span class="sidebar-normal">Slider & Progress Bar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="alert.html">
+                                        <span class="sidebar-mini-icon">A</span>
+                                        <span class="sidebar-normal">Alert</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="panel.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Panel</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#formsExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Forms
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse show" id="formsExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="form-element.html">
+                                        <span class="sidebar-mini-icon">FE</span>
+                                        <span class="sidebar-normal">Form Elements</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="form-Validations.html">
+                                        <span class="sidebar-mini-icon">FV</span>
+                                        <span class="sidebar-normal">Form Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="WizardValid.html">
+                                        <span class="sidebar-mini-icon">WV</span>
+                                        <span class="sidebar-normal">Wizard + Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="wysiwyg.html">
+                                        <span class="sidebar-mini-icon">W</span>
+                                        <span class="sidebar-normal">WYSIWYG Editor</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="Form-plugin.html">
+                                        <span class="sidebar-mini-icon">FP</span>
+                                        <span class="sidebar-normal">Form Plugins</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="notification.html">
+                            <i class="now-ui-icons ui-1_bell-53"></i>
+                            <p>Notification</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Icons</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#tableExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_bullet-list-67"></i>
+                            <p>Tables
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="tableExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="simple-table.html">
+                                        <span class="sidebar-mini-icon">ST</span>
+                                        <span class="sidebar-normal">Simple Table</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="datatable.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Datatable</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#chartExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons business_chart-pie-36"></i>
+                            <p>Charts
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="chartExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="flow-chart.html">
+                                        <span class="sidebar-mini-icon">FC</span>
+                                        <span class="sidebar-normal">Flow Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="morris-chart.html">
+                                        <span class="sidebar-mini-icon">MC</span>
+                                        <span class="sidebar-normal">Morris Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="jquery-spark.html">
+                                        <span class="sidebar-mini-icon">JS</span>
+                                        <span class="sidebar-normal">JQuery Sparklines</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#galleryExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>Gallery
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="galleryExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="picture.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Picture</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="videos.html">
+                                        <span class="sidebar-mini-icon">V</span>
+                                        <span class="sidebar-normal">Video</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#file-uploadExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>File Uploader
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="file-uploadExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="dropzone.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Dropzone</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="multiple-file.html">
+                                        <span class="sidebar-mini-icon">MF</span>
+                                        <span class="sidebar-normal">Multiple File Uploader</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#mapExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons location_pin"></i>
+                            <p>Map
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="mapExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="google-map.html">
+                                        <span class="sidebar-mini-icon">GM</span>
+                                        <span class="sidebar-normal">Google Map</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="vector-map.html">
+                                        <span class="sidebar-mini-icon">VM</span>
+                                        <span class="sidebar-normal">Vector Map</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#pageExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Pages
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="pageExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="profile.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="timeline.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">Timeline</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mail.html">
+                                        <span class="sidebar-mini-icon">M</span>
+                                        <span class="sidebar-normal">Mail</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="invoice.html">
+                                        <span class="sidebar-mini-icon">I</span>
+                                        <span class="sidebar-normal">Invoice</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login-resgiter.html">
+                                        <span class="sidebar-mini-icon">LR</span>
+                                        <span class="sidebar-normal">Login & Register</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="search.html">
+                                        <span class="sidebar-mini-icon">S</span>
+                                        <span class="sidebar-normal">Search</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blank.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Blank</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-404.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 404</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-500.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 500</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- Sidebar -->
+
+
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <!-- BreadCrumb -->
+                        <ul class="breadcrumb breadcrumb-custom">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="form-plugin.html" class="breadcrumb-active">Form Plugin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                </span>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="now-ui-icons media-2_sound-wave"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Stats</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons location_world"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Some Actions</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Notifications 1</a>
+                                    <a class="dropdown-item" href="#">Notifications 2</a>
+                                    <a class="dropdown-item" href="#">Notifications 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Account</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Messages
+                                        <span class="badge badge-gold">23</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">Sign out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-sm panel-header-custom">
+                <!-- <canvas id="bigDashboardChart"></canvas> -->
+            </div>
+            <!-- Form Plugin -->
+            <div class="content content-custom">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="title">X-editable</h5>
+                    </div>
+                    <div class="card-body">
+                        <table id="user" class="table table-bordered table-striped" style="clear: both">
+                            <tbody>
+                                <tr>
+                                    <td style="width:35%;">Simple text field</td>
+                                    <td style="width:65%">
+                                        <a href="#" id="username" data-type="text" data-pk="1" data-original-title="Enter username">superuser</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Empty text field, required</td>
+                                    <td>
+                                        <a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-original-title="Enter your firstname"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Select, local array, custom display</td>
+                                    <td>
+                                        <a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-original-title="Select sex"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Select, remote array, no buttons</td>
+                                    <td>
+                                        <a href="#" id="group" data-type="select" data-pk="1" data-value="5" data-source="/groups" data-original-title="Select group">Admin</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Select, error while loading</td>
+                                    <td>
+                                        <a href="#" id="status" data-type="select" data-pk="1" data-value="0" data-source="/status" data-original-title="Select status">Active</a>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>Datepicker</td>
+                                    <td>
+                                        <a href="#" id="vacation" data-type="date" data-viewformat="dd.mm.yyyy" data-pk="1" data-placement="right" data-original-title="When you want vacation to start?">25.02.2013</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Combodate (date)</td>
+                                    <td>
+                                        <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY"
+                                            data-template="D / MMM / YYYY" data-pk="1" data-original-title="Select Date of birth"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Combodate (datetime)</td>
+                                    <td>
+                                        <a href="#" id="event" data-type="combodate" data-template="D MMM YYYY  HH:mm" data-format="YYYY-MM-DD HH:mm"
+                                            data-viewformat="MMM D, YYYY, HH:mm" data-pk="1" data-original-title="Setup event date and time"></a>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>Textarea, buttons below. Submit by
+                                        <i>ctrl+enter</i>
+                                    </td>
+                                    <td>
+                                        <a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-original-title="Enter comments">awesome user!</a>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>Twitter typeahead.js</td>
+                                    <td>
+                                        <a href="#" id="state2" data-type="typeaheadjs" data-pk="1" data-placement="right" data-original-title="Start typing State.."></a>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>Checklist</td>
+                                    <td>
+                                        <a href="#" id="fruits" data-type="checklist" data-value="2,3" data-original-title="Select fruits"></a>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>Select2 (tags mode)</td>
+                                    <td>
+                                        <a href="#" id="tags" data-type="select2" data-pk="1" data-original-title="Enter tags">html, javascript</a>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>Select2 (dropdown mode)</td>
+                                    <td>
+                                        <a href="#" id="country" data-type="select2" data-pk="1" data-select-search="true" data-value="BS" data-original-title="Select country"></a>
+                                    </td>
+                                </tr>
+                        
+                                <tr>
+                                    <td>Custom input, several fields</td>
+                                    <td>
+                                        <a href="#" id="address" data-type="address" data-pk="1" data-original-title="Please, fill address"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Notes
+                                        <a id="pencil" href="#">
+                                            <i class="fa fa-pencil"></i> [edit]</a>
+                                        <br>
+                                        <span class="text-muted">Wysihtml5 (bootstrap only).
+                                            <br> Toggle by another element</span>
+                                    </td>
+                                    <td>
+                                        <div data-original-title="Enter notes" data-toggle="manual" data-type="wysihtml5" data-pk="1" id="note" class="editable"
+                                            tabindex="-1" style="display: block;">
+                                            <h3>WYSIWYG</h3>
+                                            WYSIWYG means
+                                            <i>What You See Is What You Get</i>.
+                                            <br> But may also refer to:
+                                            <ul>
+                                                <li>
+                                                    WYSIWYG (album), a 2000 album by Chumbawamba
+                                                </li>
+                                                <li>
+                                                    "Whatcha See is Whatcha Get", a 1971 song by The Dramatics
+                                                </li>
+                                                <li>
+                                                    WYSIWYG Film Festival, an annual Christian film festival
+                                                </li>
+                                            </ul>
+                                            <i>Source:</i>
+                                            <a href="http://en.wikipedia.org/wiki/WYSIWYG_%28disambiguation%29">
+                                                wikipedia.org
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content content-custom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Form Plugins</h5>
+                                <span>File Input</span>
+                            </div>
+                            <div class="card-body">
+                                <form action="" method="POST" class="form-inline" role="form">
+                                    <div class="form-group">
+                                        <!-- <label class="sr-only" for="">label</label> -->
+                                        <input type="email" class="form-control" id="" placeholder="Input field">
+                                    </div>
+                                    <button type="submit" class="btn btn-danger">Submit</button>
+                                </form>
+                                <div class="space"></div>                                
+                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                    <span class="btn btn-default btn-file">
+                                        <span>Choose file</span>
+                                        <input type="file" />
+                                    </span>
+                                    <span class="fileinput-filename"></span>
+                                    <span class="fileinput-new">No file chosen</span>
+                                </div>
+                                <div class="space"></div>
+                                <fieldset>
+                                    <label>Image upload widgets</label>
+                                    <br>
+                                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                                        <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                            <img data-src="holder.js/100%x100%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTkwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijk1IiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE5MHgxNDA8L3RleHQ+PC9zdmc+"
+                                                alt="...">
+                                        </div>
+                                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+                                        <div>
+                                            <span class="btn btn-default btn-file">
+                                                <span class="fileinput-new">Select image</span>
+                                                <span class="fileinput-exists">Change</span>
+                                                <input type="file" name="...">
+                                            </span>
+                                            <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                        </div>
+                                    </div>
+                                
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Knob Input</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="yep-knob">
+                                    <input class="knob" data-width="75" data-displayPrevious=true data-fgColor="#c99d00" data-skin="tron" data-cursor=true value="75"
+                                        data-thickness=".2">
+                                </div>
+                                <div class="yep-knob">
+                                    <input class="knob" data-width="150" data-displayPrevious=true data-fgColor="#000" data-skin="tron" data-thickness=".2" value="75">
+                                </div>
+                                <div class="yep-knob">
+                                    <input class="knob" data-width="150" data-angleOffset="180" data-fgColor="#0085ff" data-skin="tron" data-thickness=".1" value="35">
+                                </div>
+                                <br>
+                                <div class="panel-footer">
+                                    <button class="btn btn-danger ">
+                                        <i class="fa fa-save"></i> Save</button>
+                                    <button class="btn btn-default ">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <fieldset>
+                                    <legend>
+                                        Bootstrap Timepicker
+                                    </legend>
+                                
+                                    <div class="row">
+                                
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>Timepicker (default):</label>
+                                                        <div class="input-group">
+                                                            <input class="form-control" id="timepicker" type="text" placeholder="Select time">
+                                                            <span class="input-group-addon">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                </fieldset>
+                                
+                                <fieldset>
+                                    <legend>
+                                        Clockpicker
+                                    </legend>
+                                
+                                    <div class="row">
+                                
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>Clockpicker:</label>
+                                                        <div class="input-group">
+                                                            <input class="form-control" id="clockpicker" type="text" placeholder="Select time" data-autoclose="true">
+                                                            <span class="input-group-addon">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                </fieldset>
+                                
+                                <fieldset>
+                                    <legend>
+                                        Color Pickers
+                                    </legend>
+                                
+                                    <div class="row">
+                                
+                                        <div class="col-sm-6">
+                                
+                                            <div class="form-group">
+                                                <label>Color Picker (HEX)</label>
+                                                <input class="form-control" id="colorpicker-1" type="text" value="#8fff00">
+                                            </div>
+                                
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>Color Picker (RGBA)</label>
+                                            <div class="input-group" id="colorpicker-2">
+                                                <input type="text" value="#5e0c0c" class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <i></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <div class="panel-footer">
+                                    <button class="btn btn-danger ">
+                                        <i class="fa fa-save"></i> Submit</button>
+                                    <button class="btn btn-default ">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Jasny Input Masking</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="alert alert-info text-align-center">
+                                    USAGE: &lt;input type=&quot;text&quot;
+                                    <strong>data-mask=&quot;99/99/9999&quot; data-placeholder= &quot;-&quot;&gt;</strong>
+                                </p>
+                                <form>
+                                
+                                    <fieldset>
+                                
+                                        <div class="form-group">
+                                            <label>Date masking</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" data-mask="99/99/9999" data-placeholder="-">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-calendar"></i>
+                                                </span>
+                                            </div>
+                                            <p class="note">
+                                                Data format **/**/****
+                                            </p>
+                                        </div>
+                                
+                                        <div class="form-group">
+                                            <label>Phone masking</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" data-mask="(999) 999-9999" data-placeholder="X">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-phone"></i>
+                                                </span>
+                                            </div>
+                                            <p class="note">
+                                                Data format (XXX) XXX-XXXX
+                                            </p>
+                                        </div>
+                                
+                                        <div class="form-group">
+                                            <label>Credit card masking</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" data-mask="9999-9999-9999-9999" data-placeholder="*">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-credit-card"></i>
+                                                </span>
+                                            </div>
+                                            <p class="note">
+                                                Data format ****-****-****-****
+                                            </p>
+                                        </div>
+                                
+                                        <div class="form-group">
+                                            <label>Serial number masking</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" data-mask="***-***-***-***-***-***" data-placeholder="_">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-asterisk"></i>
+                                                </span>
+                                            </div>
+                                            <p class="note">
+                                                Data format ***-***-***-***-***-***
+                                            </p>
+                                        </div>
+                                
+                                        <div class="form-group">
+                                            <label>Tax ID masking</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" data-mask="99-9999999" data-placeholder="X">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-briefcase"></i>
+                                                </span>
+                                            </div>
+                                            <p class="note">
+                                                Data format 99-9999999
+                                            </p>
+                                        </div>
+                                
+                                    </fieldset>
+                                </form>
+                                <div class="panel-footer">
+                                    <button class="btn btn-danger ">
+                                        <i class="fa fa-save"></i> Submit</button>
+                                    <button class="btn btn-default ">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Standard Select</h5>
+                            </div>
+                            <div class="card-body">
+                                <fieldset>
+                                    <div class="row">
+                                
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option value="1">Administrator</option>
+                                                    <option value="1">Guest</option>
+                                                    <option value="1">Power User</option>
+                                                    <option value="1">Support User</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Select 2</h5>
+                            </div>
+                            <div class="card-body">
+                                <fieldset>
+                                
+                                    <div class="form-group">
+                                        <label>Select2 Plugin (select)</label>
+                                        <select style="width:100%" class="select2">
+                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                <option value="AK">Alaska</option>
+                                                <option value="HI">Hawaii</option>
+                                            </optgroup>
+                                            <optgroup label="Pacific Time Zone">
+                                                <option value="CA">California</option>
+                                                <option value="NV">Nevada</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="WA">Washington</option>
+                                            </optgroup>
+                                            <optgroup label="Mountain Time Zone">
+                                                <option value="AZ">Arizona</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="MT">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="WY">Wyoming</option>
+                                            </optgroup>
+                                            <optgroup label="Central Time Zone">
+                                                <option value="AL">Alabama</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="WI">Wisconsin</option>
+                                            </optgroup>
+                                            <optgroup label="Eastern Time Zone">
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI">Michigan</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WV">West Virginia</option>
+                                            </optgroup>
+                                        </select>
+                                        <p></p>
+                                        <p class="alert alert-info text-align-center">
+                                            <strong>Usage:</strong> &lt;select style=&quot;width:100%&quot; class=&quot;select2&quot; &quot;&gt;...&lt;/select&gt;
+                                        </p>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label>Select2 Plugin (multi-select)</label>
+                                        <select multiple style="width:100%" class="select2">
+                                            <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                <option value="AK">Alaska</option>
+                                                <option value="HI">Hawaii</option>
+                                            </optgroup>
+                                            <optgroup label="Pacific Time Zone">
+                                                <option value="CA">California</option>
+                                                <option value="NV" selected="selected">Nevada</option>
+                                                <option value="OR">Oregon</option>
+                                                <option value="WA">Washington</option>
+                                            </optgroup>
+                                            <optgroup label="Mountain Time Zone">
+                                                <option value="AZ">Arizona</option>
+                                                <option value="CO">Colorado</option>
+                                                <option value="ID">Idaho</option>
+                                                <option value="MT" selected="selected">Montana</option>
+                                                <option value="NE">Nebraska</option>
+                                                <option value="NM">New Mexico</option>
+                                                <option value="ND">North Dakota</option>
+                                                <option value="UT">Utah</option>
+                                                <option value="WY">Wyoming</option>
+                                            </optgroup>
+                                            <optgroup label="Central Time Zone">
+                                                <option value="AL">Alabama</option>
+                                                <option value="AR">Arkansas</option>
+                                                <option value="IL">Illinois</option>
+                                                <option value="IA">Iowa</option>
+                                                <option value="KS">Kansas</option>
+                                                <option value="KY">Kentucky</option>
+                                                <option value="LA">Louisiana</option>
+                                                <option value="MN">Minnesota</option>
+                                                <option value="MS">Mississippi</option>
+                                                <option value="MO">Missouri</option>
+                                                <option value="OK">Oklahoma</option>
+                                                <option value="SD">South Dakota</option>
+                                                <option value="TX">Texas</option>
+                                                <option value="TN">Tennessee</option>
+                                                <option value="WI">Wisconsin</option>
+                                            </optgroup>
+                                            <optgroup label="Eastern Time Zone">
+                                                <option value="CT">Connecticut</option>
+                                                <option value="DE">Delaware</option>
+                                                <option value="FL">Florida</option>
+                                                <option value="GA">Georgia</option>
+                                                <option value="IN">Indiana</option>
+                                                <option value="ME">Maine</option>
+                                                <option value="MD">Maryland</option>
+                                                <option value="MA">Massachusetts</option>
+                                                <option value="MI" selected="selected">Michigan</option>
+                                                <option value="NH">New Hampshire</option>
+                                                <option value="NJ">New Jersey</option>
+                                                <option value="NY">New York</option>
+                                                <option value="NC">North Carolina</option>
+                                                <option value="OH">Ohio</option>
+                                                <option value="PA">Pennsylvania</option>
+                                                <option value="RI">Rhode Island</option>
+                                                <option value="SC">South Carolina</option>
+                                                <option value="VT">Vermont</option>
+                                                <option value="VA">Virginia</option>
+                                                <option value="WV">West Virginia</option>
+                                            </optgroup>
+                                        </select>
+                                
+                                        <p></p>
+                                        <p class="alert alert-info text-align-center">
+                                            <strong>Usage:</strong> &lt;select multiple style=&quot;width:100%&quot; class=&quot;select2&quot; &gt;...&lt;/select&gt;
+                                        </p>
+                                    </div>
+                                
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Tags</h5>
+                            </div>
+                            <div class="card-body">
+                                <fieldset>
+                                    <div class="row">
+                                
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option value="1">Administrator</option>
+                                                    <option value="1">Guest</option>
+                                                    <option value="1">Power User</option>
+                                                    <option value="1">Support User</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </fieldset>
+                                <fieldset>
+                                
+                                    <div class="row">
+                                
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label>Type and enter to add tag</label>
+                                                <input class="form-control tagsinput" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput">
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Exolve
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>, Designed by
+                        <a href="#" target="_blank">Exolve</a>. Coded by
+                        <a href="#" target="_blank">Exolve</a>.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chart JS -->
+<script src="../assets/js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/now-ui-dashboard.js?v=1.0.1"></script>
+<script src="../assets/js/now-ui-kit.js"></script>
+<script src="../assets/js/custom.js"></script>
+<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/demo/demo.js"></script>
+
+<!-- Related JavaScript Library to This Pagee -->
+<script type="text/javascript" src="../assets/vendors/jquery-validation/js/jquery.validate.min.js"></script>
+
+<!-- Bootstrap Plugins -->
+<script type="text/javascript" src="../assets/plugins/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="../assets/plugins/bootstrap-switch.js"></script>
+<script type="text/javascript" src="../assets/plugins/jquery.sharrre.js"></script>
+<script type="text/javascript" src="../assets/plugins/nouislider.min.js"></script>
+
+<!-- Related JavaScript Library to This Page -->
+<script type="text/javascript" src="../assets/vendors/x-editable/js/bootstrap-editable.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/momentjs/js/moment.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/typeaheadjs/js/typeahead.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/typeaheadjs/js/typeaheadjs.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/jquery-mockjax/js/jquery.mockjax.min.js"></script>
+<!-- Use for ajax simulate -->
+<script type="text/javascript" src="../assets/vendors/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+<!-- Use for input mask -->
+<script type="text/javascript" src="../assets/vendors/jquery-knob/js/jquery.knob.min.js"></script>
+<!-- Use for jquery knob input -->
+<script type="text/javascript" src="../assets/vendors/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+<!-- Use for Input tags -->
+<script type="text/javascript" src="../assets/vendors/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/clockpicker/js/bootstrap-clockpicker.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/wysihtml5/js/wysihtml5-0.3.0.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/wysihtml5/js/bootstrap-wysihtml5.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/wysihtml5/js/wysihtml5.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
+
+<!-- Plugins Script -->
+<script type="text/javascript">
+    //ajax mocks
+    $.mockjaxSettings.responseTime = 250;
+
+    $.mockjax({
+        url: '/post',
+        response: function (settings) {
+            log(settings, this);
+        }
+    });
+
+    $.mockjax({
+        url: '/error',
+        status: 400,
+        statusText: 'Bad Request',
+        response: function (settings) {
+            this.responseText = 'Please input correct value';
+            log(settings, this);
+        }
+    });
+
+    $.mockjax({
+        url: '/status',
+        status: 500,
+        response: function (settings) {
+            this.responseText = 'Internal Server Error';
+            log(settings, this);
+        }
+    });
+
+    $.mockjax({
+        url: '/groups',
+        response: function (settings) {
+            this.responseText = [{
+                value: 0,
+                text: 'Guest'
+            }, {
+                value: 1,
+                text: 'Service'
+            }, {
+                value: 2,
+                text: 'Customer'
+            }, {
+                value: 3,
+                text: 'Operator'
+            }, {
+                value: 4,
+                text: 'Support'
+            }, {
+                value: 5,
+                text: 'Admin'
+            }];
+            log(settings, this);
+        }
+    });
+
+    //console log related to x-editable
+    function log(settings, response) {
+        var s = [],
+            str;
+        s.push(settings.type.toUpperCase() + ' url = "' + settings.url + '"');
+        for (var a in settings.data) {
+            if (settings.data[a] && typeof settings.data[a] === 'object') {
+                str = [];
+                for (var j in settings.data[a]) {
+                    str.push(j + ': "' + settings.data[a][j] + '"');
+                }
+                str = '{ ' + str.join(', ') + ' }';
+            } else {
+                str = '"' + settings.data[a] + '"';
+            }
+            s.push(a + ' = ' + str);
+        }
+        s.push('RESPONSE: status = ' + response.status);
+
+        if (response.responseText) {
+            if ($.isArray(response.responseText)) {
+                s.push('[');
+                $.each(response.responseText, function (i, v) {
+                    s.push('{value: ' + v.value + ', text: "' + v.text + '"}');
+                });
+                s.push(']');
+            } else {
+                s.push($.trim(response.responseText));
+            }
+        }
+        s.push('--------------------------------------\n');
+        $('#console').val(s.join('\n') + $('#console').val());
+    }
+    /*
+     * X-EDITABLES
+     */
+    (function (e) {
+        "use strict";
+        var t = function (e) {
+            this.init("address", e, t.defaults)
+        };
+        e.fn.editableutils.inherit(t, e.fn.editabletypes.abstractinput);
+        e.extend(t.prototype, {
+            render: function () {
+                this.$input = this.$tpl.find("input")
+            },
+            value2html: function (t, n) {
+                if (!t) {
+                    e(n).empty();
+                    return
+                }
+                var r = e("<div>").text(t.city).html() + ", " + e("<div>").text(t.street).html() +
+                    " st., bld. " + e("<div>").text(t.building).html();
+                e(n).html(r)
+            },
+            html2value: function (e) {
+                return null
+            },
+            value2str: function (e) {
+                var t = "";
+                if (e)
+                    for (var n in e)
+                        t = t + n + ":" + e[n] + ";";
+                return t
+            },
+            str2value: function (e) {
+                return e
+            },
+            value2input: function (e) {
+                if (!e)
+                    return;
+                this.$input.filter('[name="city"]').val(e.city);
+                this.$input.filter('[name="street"]').val(e.street);
+                this.$input.filter('[name="building"]').val(e.building)
+            },
+            input2value: function () {
+                return {
+                    city: this.$input.filter('[name="city"]').val(),
+                    street: this.$input.filter('[name="street"]').val(),
+                    building: this.$input.filter('[name="building"]').val()
+                }
+            },
+            activate: function () {
+                this.$input.filter('[name="city"]').focus()
+            },
+            autosubmit: function () {
+                this.$input.keydown(function (t) {
+                    t.which === 13 && e(this).closest("form").submit()
+                })
+            }
+        });
+        t.defaults = e.extend({}, e.fn.editabletypes.abstractinput.defaults, {
+            tpl: '<div class="editable-address"><label><span>City: </span><input type="text" name="city" class="input-small"></label></div><div class="editable-address"><label><span>Street: </span><input type="text" name="street" class="input-small"></label></div><div class="editable-address"><label><span>Building: </span><input type="text" name="building" class="input-mini"></label></div>',
+            inputclass: ""
+        });
+        e.fn.editabletypes.address = t
+    })(window.jQuery);
+
+    //defaults
+    $.fn.editable.defaults.url = '/post';
+    $.fn.editable.defaults.mode = 'inline'; //use this to edit inline
+
+    //enable / disable
+    $('#enable').click(function () {
+        $('#user .editable').editable('toggleDisabled');
+    });
+
+    //editables
+    $('#username').editable({
+        url: '/post',
+        type: 'text',
+        pk: 1,
+        name: 'username',
+        title: 'Enter username'
+    });
+
+    $('#firstname').editable({
+        validate: function (value) {
+            if ($.trim(value) == '')
+                return 'This field is required';
+        }
+    });
+
+    $('#sex').editable({
+        prepend: "not selected",
+        source: [{
+            value: 1,
+            text: 'Male'
+        }, {
+            value: 2,
+            text: 'Female'
+        }],
+        display: function (value, sourceData) {
+            var colors = {
+                "": "gray",
+                1: "green",
+                2: "blue"
+            }, elem = $.grep(sourceData, function (o) {
+                return o.value == value;
+            });
+
+            if (elem.length) {
+                $(this).text(elem[0].text).css("color", colors[value]);
+            } else {
+                $(this).empty();
+            }
+        }
+    });
+
+    $('#status').editable();
+
+    $('#group').editable({
+        showbuttons: false
+    });
+
+    $('#vacation').editable({
+        tpl: '<div class="input-group date">\
+					<input class="form-control" type="text" placeholder="From" >\
+					<span class="input-group-btn">\
+	 					<button class="btn btn-default" type="button">\
+	 						<i class="glyphicon glyphicon-calendar"></i>\
+	 					</button>\
+	 				</span>\
+				</div>',
+        type: 'datetime',
+        url: '/post',
+        format: 'yyyy-mm-dd',
+        viewformat: 'yyyy-mm-dd',
+        inputclass: "datepick",
+        placement: function (context, source) {
+            var popupWidth = 336;
+            if (($(window).scrollLeft() + popupWidth) > $(source).offset().left) {
+                return "right";
+            } else {
+                return "left";
+            }
+        },
+        emptytext: '...',
+        persianDatepicker: {
+            altField: '#starttime',
+            altFormat: "YYYY/MM/DD HH:mm",
+            starttime: true,
+            format: 'YYYY/MM/DD HH:mm',
+        }
+    });
+
+    $('#dob').editable();
+
+    $('#event').editable({
+        placement: 'right',
+        combodate: {
+            firstItem: 'name'
+        }
+    });
+
+    $('#meeting_start').editable({
+        format: 'yyyy-mm-dd hh:ii',
+        viewformat: 'dd/mm/yyyy hh:ii',
+        validate: function (v) {
+            if (v && v.getDate() == 10)
+                return 'Day cant be 10!';
+        },
+        datetimepicker: {
+            todayBtn: 'linked',
+            weekStart: 1
+        }
+    });
+
+    $('#comments').editable({
+        showbuttons: 'bottom'
+    });
+
+    $('#note').editable();
+    $('#pencil').click(function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $('#note').editable('toggle');
+    });
+
+    $('#state').editable({
+        source: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
+            "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",
+            "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+            "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon",
+            "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+            "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+        ]
+    });
+
+    $('#state2').editable({
+        value: 'California',
+        typeahead: {
+            name: 'state',
+            local: ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+                "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+                "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+                "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+                "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio",
+                "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+                "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+                "Wisconsin", "Wyoming"
+            ]
+        }
+    });
+
+    $('#fruits').editable({
+        pk: 1,
+        limit: 3,
+        source: [{
+            value: 1,
+            text: 'banana'
+        }, {
+            value: 2,
+            text: 'peach'
+        }, {
+            value: 3,
+            text: 'apple'
+        }, {
+            value: 4,
+            text: 'watermelon'
+        }, {
+            value: 5,
+            text: 'orange'
+        }]
+    });
+
+    $('#tags').editable({
+        inputclass: 'input-large',
+        select2: {
+            tags: ['html', 'javascript', 'css', 'ajax'],
+            tokenSeparators: [",", " "]
+        }
+    });
+
+    var countries = [];
+    $.each({
+        "BD": "Bangladesh",
+        "BE": "Belgium",
+        "BF": "Burkina Faso",
+        "BG": "Bulgaria",
+        "BA": "Bosnia and Herzegovina",
+        "BB": "Barbados",
+        "WF": "Wallis and Futuna",
+        "BL": "Saint Bartelemey",
+        "BM": "Bermuda",
+        "BN": "Brunei Darussalam",
+        "BO": "Bolivia",
+        "BH": "Bahrain",
+        "BI": "Burundi",
+        "BJ": "Benin",
+        "BT": "Bhutan",
+        "JM": "Jamaica",
+        "BV": "Bouvet Island",
+        "BW": "Botswana",
+        "WS": "Samoa",
+        "BR": "Brazil",
+        "BS": "Bahamas",
+        "JE": "Jersey",
+        "BY": "Belarus",
+        "O1": "Other Country",
+        "LV": "Latvia",
+        "RW": "Rwanda",
+        "RS": "Serbia",
+        "TL": "Timor-Leste",
+        "RE": "Reunion",
+        "LU": "Luxembourg",
+        "TJ": "Tajikistan",
+        "RO": "Romania",
+        "PG": "Papua New Guinea",
+        "GW": "Guinea-Bissau",
+        "GU": "Guam",
+        "GT": "Guatemala",
+        "GS": "South Georgia and the South Sandwich Islands",
+        "GR": "Greece",
+        "GQ": "Equatorial Guinea",
+        "GP": "Guadeloupe",
+        "JP": "Japan",
+        "GY": "Guyana",
+        "GG": "Guernsey",
+        "GF": "French Guiana",
+        "GE": "Georgia",
+        "GD": "Grenada",
+        "GB": "United Kingdom",
+        "GA": "Gabon",
+        "SV": "El Salvador",
+        "GN": "Guinea",
+        "GM": "Gambia",
+        "GL": "Greenland",
+        "GI": "Gibraltar",
+        "GH": "Ghana",
+        "OM": "Oman",
+        "TN": "Tunisia",
+        "JO": "Jordan",
+        "HR": "Croatia",
+        "HT": "Haiti",
+        "HU": "Hungary",
+        "HK": "Hong Kong",
+        "HN": "Honduras",
+        "HM": "Heard Island and McDonald Islands",
+        "VE": "Venezuela",
+        "PR": "Puerto Rico",
+        "PS": "Palestinian Territory",
+        "PW": "Palau",
+        "PT": "Portugal",
+        "SJ": "Svalbard and Jan Mayen",
+        "PY": "Paraguay",
+        "IQ": "Iraq",
+        "PA": "Panama",
+        "PF": "French Polynesia",
+        "BZ": "Belize",
+        "PE": "Peru",
+        "PK": "Pakistan",
+        "PH": "Philippines",
+        "PN": "Pitcairn",
+        "TM": "Turkmenistan",
+        "PL": "Poland",
+        "PM": "Saint Pierre and Miquelon",
+        "ZM": "Zambia",
+        "EH": "Western Sahara",
+        "RU": "Russian Federation",
+        "EE": "Estonia",
+        "EG": "Egypt",
+        "TK": "Tokelau",
+        "ZA": "South Africa",
+        "EC": "Ecuador",
+        "IT": "Italy",
+        "VN": "Vietnam",
+        "SB": "Solomon Islands",
+        "EU": "Europe",
+        "ET": "Ethiopia",
+        "SO": "Somalia",
+        "ZW": "Zimbabwe",
+        "SA": "Saudi Arabia",
+        "ES": "Spain",
+        "ER": "Eritrea",
+        "ME": "Montenegro",
+        "MD": "Moldova, Republic of",
+        "MG": "Madagascar",
+        "MF": "Saint Martin",
+        "MA": "Morocco",
+        "MC": "Monaco",
+        "UZ": "Uzbekistan",
+        "MM": "Myanmar",
+        "ML": "Mali",
+        "MO": "Macao",
+        "MN": "Mongolia",
+        "MH": "Marshall Islands",
+        "MK": "Macedonia",
+        "MU": "Mauritius",
+        "MT": "Malta",
+        "MW": "Malawi",
+        "MV": "Maldives",
+        "MQ": "Martinique",
+        "MP": "Northern Mariana Islands",
+        "MS": "Montserrat",
+        "MR": "Mauritania",
+        "IM": "Isle of Man",
+        "UG": "Uganda",
+        "TZ": "Tanzania, United Republic of",
+        "MY": "Malaysia",
+        "MX": "Mexico",
+        "IL": "Israel",
+        "FR": "France",
+        "IO": "British Indian Ocean Territory",
+        "FX": "France, Metropolitan",
+        "SH": "Saint Helena",
+        "FI": "Finland",
+        "FJ": "Fiji",
+        "FK": "Falkland Islands (Malvinas)",
+        "FM": "Micronesia, Federated States of",
+        "FO": "Faroe Islands",
+        "NI": "Nicaragua",
+        "NL": "Netherlands",
+        "NO": "Norway",
+        "NA": "Namibia",
+        "VU": "Vanuatu",
+        "NC": "New Caledonia",
+        "NE": "Niger",
+        "NF": "Norfolk Island",
+        "NG": "Nigeria",
+        "NZ": "New Zealand",
+        "NP": "Nepal",
+        "NR": "Nauru",
+        "NU": "Niue",
+        "CK": "Cook Islands",
+        "CI": "Cote d'Ivoire",
+        "CH": "Switzerland",
+        "CO": "Colombia",
+        "CN": "China",
+        "CM": "Cameroon",
+        "CL": "Chile",
+        "CC": "Cocos (Keeling) Islands",
+        "CA": "Canada",
+        "CG": "Congo",
+        "CF": "Central African Republic",
+        "CD": "Congo, The Democratic Republic of the",
+        "CZ": "Czech Republic",
+        "CY": "Cyprus",
+        "CX": "Christmas Island",
+        "CR": "Costa Rica",
+        "CV": "Cape Verde",
+        "CU": "Cuba",
+        "SZ": "Swaziland",
+        "SY": "Syrian Arab Republic",
+        "KG": "Kyrgyzstan",
+        "KE": "Kenya",
+        "SR": "Suriname",
+        "KI": "Kiribati",
+        "KH": "Cambodia",
+        "KN": "Saint Kitts and Nevis",
+        "KM": "Comoros",
+        "ST": "Sao Tome and Principe",
+        "SK": "Slovakia",
+        "KR": "Korea, Republic of",
+        "SI": "Slovenia",
+        "KP": "Korea, Democratic People's Republic of",
+        "KW": "Kuwait",
+        "SN": "Senegal",
+        "SM": "San Marino",
+        "SL": "Sierra Leone",
+        "SC": "Seychelles",
+        "KZ": "Kazakhstan",
+        "KY": "Cayman Islands",
+        "SG": "Singapore",
+        "SE": "Sweden",
+        "SD": "Sudan",
+        "DO": "Dominican Republic",
+        "DM": "Dominica",
+        "DJ": "Djibouti",
+        "DK": "Denmark",
+        "VG": "Virgin Islands, British",
+        "DE": "Germany",
+        "YE": "Yemen",
+        "DZ": "Algeria",
+        "US": "United States",
+        "UY": "Uruguay",
+        "YT": "Mayotte",
+        "UM": "United States Minor Outlying Islands",
+        "LB": "Lebanon",
+        "LC": "Saint Lucia",
+        "LA": "Lao People's Democratic Republic",
+        "TV": "Tuvalu",
+        "TW": "Taiwan",
+        "TT": "Trinidad and Tobago",
+        "TR": "Turkey",
+        "LK": "Sri Lanka",
+        "LI": "Liechtenstein",
+        "A1": "Anonymous Proxy",
+        "TO": "Tonga",
+        "LT": "Lithuania",
+        "A2": "Satellite Provider",
+        "LR": "Liberia",
+        "LS": "Lesotho",
+        "TH": "Thailand",
+        "TF": "French Southern Territories",
+        "TG": "Togo",
+        "TD": "Chad",
+        "TC": "Turks and Caicos Islands",
+        "LY": "Libyan Arab Jamahiriya",
+        "VA": "Holy See (Vatican City State)",
+        "VC": "Saint Vincent and the Grenadines",
+        "AE": "United Arab Emirates",
+        "AD": "Andorra",
+        "AG": "Antigua and Barbuda",
+        "AF": "Afghanistan",
+        "AI": "Anguilla",
+        "VI": "Virgin Islands, U.S.",
+        "IS": "Iceland",
+        "IR": "Iran, Islamic Republic of",
+        "AM": "Armenia",
+        "AL": "Albania",
+        "AO": "Angola",
+        "AN": "Netherlands Antilles",
+        "AQ": "Antarctica",
+        "AP": "Asia/Pacific Region",
+        "AS": "American Samoa",
+        "AR": "Argentina",
+        "AU": "Australia",
+        "AT": "Austria",
+        "AW": "Aruba",
+        "IN": "India",
+        "AX": "Aland Islands",
+        "AZ": "Azerbaijan",
+        "IE": "Ireland",
+        "ID": "Indonesia",
+        "UA": "Ukraine",
+        "QA": "Qatar",
+        "MZ": "Mozambique"
+    }, function (k, v) {
+        countries.push({
+            id: k,
+            text: v
+        });
+    });
+
+    $('#country').editable({
+        source: countries,
+        select2: {
+            width: 200
+        }
+    });
+
+
+    $('#address').editable({
+        url: '/post',
+        value: {
+            city: "Moscow",
+            street: "Lenina",
+            building: "12"
+        },
+        validate: function (value) {
+            if (value.city == '')
+                return 'city is required!';
+        },
+        display: function (value) {
+            if (!value) {
+                $(this).empty();
+                return;
+            }
+            var html = '<b>' + $('<div>').text(value.city).html() + '</b>, ' + $('<div>').text(value.street)
+                .html() + ' st., bld. ' + $('<div>').text(value.building).html();
+            $(this).html(html);
+        }
+    });
+
+    // Select Script
+    $('.select2').select2({
+        allowClear: true,
+        width: '100%'
+    });
+
+    // Jquery knob initialize
+    $(".knob").knob();
+
+
+    // Bootstrap time picker
+    $('#timepicker').timepicker();
+
+
+    // Date Range Picker
+    $("#from").datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 3,
+        prevText: '<i class="fa fa-chevron-left"></i>',
+        nextText: '<i class="fa fa-chevron-right"></i>',
+        onClose: function (selectedDate) {
+            $("#to").datepicker("option", "maxDate", selectedDate);
+        }
+
+    });
+    $("#to").datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 3,
+        prevText: '<i class="fa fa-chevron-left"></i>',
+        nextText: '<i class="fa fa-chevron-right"></i>',
+        onClose: function (selectedDate) {
+            $("#from").datepicker("option", "minDate", selectedDate);
+        }
+    });
+
+
+    // ClockPicker 						
+    $('#clockpicker').clockpicker({
+        placement: 'top',
+        donetext: 'Done'
+    });
+
+
+
+
+    /* COLOR PICKER */
+
+
+    $('#colorpicker-1').colorpicker()
+    $('#colorpicker-2').colorpicker()
+
+
+</script>
+
+
+
+</script>
+
+</html>

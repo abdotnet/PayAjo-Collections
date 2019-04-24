@@ -1,0 +1,140 @@
+2018-09-23 05:20:20.065 +01:00 [Information] Starting web host
+2018-09-23 05:20:24.945 +01:00 [Information] Start installing Hangfire SQL objects...
+2018-09-23 05:20:25.371 +01:00 [Information] Hangfire SQL objects installed.
+2018-09-23 05:20:25.426 +01:00 [Information] Starting Hangfire Server
+2018-09-23 05:20:25.430 +01:00 [Information] Using job storage: 'SQL Server: (local)@PayAjo'
+2018-09-23 05:20:25.431 +01:00 [Information] Using the following options for SQL Server job storage:
+2018-09-23 05:20:25.431 +01:00 [Information]     Queue poll interval: 00:00:15.
+2018-09-23 05:20:25.431 +01:00 [Information] Using the following options for Hangfire Server:
+2018-09-23 05:20:25.431 +01:00 [Information]     Worker count: 20
+2018-09-23 05:20:25.432 +01:00 [Information]     Listening queues: 'default'
+2018-09-23 05:20:25.432 +01:00 [Information]     Shutdown timeout: 00:00:15
+2018-09-23 05:20:25.432 +01:00 [Information]     Schedule polling interval: 00:00:15
+2018-09-23 05:52:04.581 +01:00 [Information] Starting web host
+2018-09-23 05:52:09.454 +01:00 [Information] Start installing Hangfire SQL objects...
+2018-09-23 05:52:09.763 +01:00 [Information] Hangfire SQL objects installed.
+2018-09-23 05:52:09.813 +01:00 [Information] Starting Hangfire Server
+2018-09-23 05:52:09.820 +01:00 [Information] Using job storage: 'SQL Server: (local)@PayAjo'
+2018-09-23 05:52:09.821 +01:00 [Information] Using the following options for SQL Server job storage:
+2018-09-23 05:52:09.822 +01:00 [Information]     Queue poll interval: 00:00:15.
+2018-09-23 05:52:09.822 +01:00 [Information] Using the following options for Hangfire Server:
+2018-09-23 05:52:09.822 +01:00 [Information]     Worker count: 20
+2018-09-23 05:52:09.823 +01:00 [Information]     Listening queues: 'default'
+2018-09-23 05:52:09.823 +01:00 [Information]     Shutdown timeout: 00:00:15
+2018-09-23 05:52:09.823 +01:00 [Information]     Schedule polling interval: 00:00:15
+2018-09-23 11:34:42.910 +01:00 [Information] Starting web host
+2018-09-23 11:34:47.320 +01:00 [Information] Start installing Hangfire SQL objects...
+2018-09-23 11:34:47.631 +01:00 [Information] Hangfire SQL objects installed.
+2018-09-23 11:34:47.668 +01:00 [Information] Starting Hangfire Server
+2018-09-23 11:34:47.672 +01:00 [Information] Using job storage: 'SQL Server: (local)@PayAjo'
+2018-09-23 11:34:47.672 +01:00 [Information] Using the following options for SQL Server job storage:
+2018-09-23 11:34:47.672 +01:00 [Information]     Queue poll interval: 00:00:15.
+2018-09-23 11:34:47.672 +01:00 [Information] Using the following options for Hangfire Server:
+2018-09-23 11:34:47.672 +01:00 [Information]     Worker count: 20
+2018-09-23 11:34:47.673 +01:00 [Information]     Listening queues: 'default'
+2018-09-23 11:34:47.673 +01:00 [Information]     Shutdown timeout: 00:00:15
+2018-09-23 11:34:47.673 +01:00 [Information]     Schedule polling interval: 00:00:15
+2018-09-23 11:34:48.105 +01:00 [Information] 2 servers were removed due to timeout
+2018-09-23 11:35:29.287 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Collection"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"CollectionType"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"CurrentBalance"' on entity type '"CustomerBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"CurrentBalance"' on entity type '"MerchantAgentBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"MerchantBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"MerchantBalanceSetting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"Cost"' on entity type '"Notification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"MinimumBalance"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"SmsAmount"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"SmsUnit"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"TechAmount"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.292 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"TransactionLog"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:29.293 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Withdrawal"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 11:35:44.718 +01:00 [Information] I am currently @ the get customer registration 
+2018-09-23 11:35:57.488 +01:00 [Information] I am currently @ the get customer registration 
+2018-09-23 11:45:52.748 +01:00 [Information] I am currently @ the get customer registration 
+2018-09-23 12:12:44.566 +01:00 [Information] Starting web host
+2018-09-23 12:12:48.002 +01:00 [Information] Start installing Hangfire SQL objects...
+2018-09-23 12:12:48.380 +01:00 [Information] Hangfire SQL objects installed.
+2018-09-23 12:12:48.424 +01:00 [Information] Starting Hangfire Server
+2018-09-23 12:12:48.428 +01:00 [Information] Using job storage: 'SQL Server: (local)@PayAjo'
+2018-09-23 12:12:48.429 +01:00 [Information] Using the following options for SQL Server job storage:
+2018-09-23 12:12:48.429 +01:00 [Information]     Queue poll interval: 00:00:15.
+2018-09-23 12:12:48.429 +01:00 [Information] Using the following options for Hangfire Server:
+2018-09-23 12:12:48.429 +01:00 [Information]     Worker count: 20
+2018-09-23 12:12:48.429 +01:00 [Information]     Listening queues: 'default'
+2018-09-23 12:12:48.429 +01:00 [Information]     Shutdown timeout: 00:00:15
+2018-09-23 12:12:48.429 +01:00 [Information]     Schedule polling interval: 00:00:15
+2018-09-23 12:12:48.896 +01:00 [Information] 1 servers were removed due to timeout
+2018-09-23 12:13:05.436 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Collection"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.440 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"CollectionType"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.441 +01:00 [Warning] No type was specified for the decimal column '"CurrentBalance"' on entity type '"CustomerBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.441 +01:00 [Warning] No type was specified for the decimal column '"CurrentBalance"' on entity type '"MerchantAgentBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.441 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"MerchantBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.441 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"MerchantBalanceSetting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.441 +01:00 [Warning] No type was specified for the decimal column '"Cost"' on entity type '"Notification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.441 +01:00 [Warning] No type was specified for the decimal column '"MinimumBalance"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.441 +01:00 [Warning] No type was specified for the decimal column '"SmsAmount"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.441 +01:00 [Warning] No type was specified for the decimal column '"SmsUnit"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.441 +01:00 [Warning] No type was specified for the decimal column '"TechAmount"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.441 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.441 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"TransactionLog"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:05.442 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Withdrawal"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 12:13:13.024 +01:00 [Information] I am currently @ the get customer registration 
+2018-09-23 12:28:19.602 +01:00 [Information] I am currently @ the get customer registration 
+2018-09-23 13:17:25.543 +01:00 [Information] Starting web host
+2018-09-23 13:17:29.510 +01:00 [Information] Start installing Hangfire SQL objects...
+2018-09-23 13:17:29.807 +01:00 [Information] Hangfire SQL objects installed.
+2018-09-23 13:17:29.843 +01:00 [Information] Starting Hangfire Server
+2018-09-23 13:17:29.847 +01:00 [Information] Using job storage: 'SQL Server: (local)@PayAjo'
+2018-09-23 13:17:29.848 +01:00 [Information] Using the following options for SQL Server job storage:
+2018-09-23 13:17:29.848 +01:00 [Information]     Queue poll interval: 00:00:15.
+2018-09-23 13:17:29.848 +01:00 [Information] Using the following options for Hangfire Server:
+2018-09-23 13:17:29.848 +01:00 [Information]     Worker count: 20
+2018-09-23 13:17:29.849 +01:00 [Information]     Listening queues: 'default'
+2018-09-23 13:17:29.849 +01:00 [Information]     Shutdown timeout: 00:00:15
+2018-09-23 13:17:29.849 +01:00 [Information]     Schedule polling interval: 00:00:15
+2018-09-23 13:17:30.299 +01:00 [Information] 1 servers were removed due to timeout
+2018-09-23 13:17:38.946 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Collection"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.951 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"CollectionType"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.951 +01:00 [Warning] No type was specified for the decimal column '"CurrentBalance"' on entity type '"CustomerBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.951 +01:00 [Warning] No type was specified for the decimal column '"CurrentBalance"' on entity type '"MerchantAgentBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.951 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"MerchantBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.951 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"MerchantBalanceSetting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.951 +01:00 [Warning] No type was specified for the decimal column '"Cost"' on entity type '"Notification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.951 +01:00 [Warning] No type was specified for the decimal column '"MinimumBalance"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.951 +01:00 [Warning] No type was specified for the decimal column '"SmsAmount"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.952 +01:00 [Warning] No type was specified for the decimal column '"SmsUnit"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.952 +01:00 [Warning] No type was specified for the decimal column '"TechAmount"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.952 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.952 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"TransactionLog"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:17:38.952 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Withdrawal"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:21:06.620 +01:00 [Information] I am currently @ the get customer registration 
+2018-09-23 13:21:51.059 +01:00 [Information] I am currently @ the get customer registration 
+2018-09-23 13:40:15.222 +01:00 [Information] Starting web host
+2018-09-23 13:40:19.206 +01:00 [Information] Start installing Hangfire SQL objects...
+2018-09-23 13:40:19.552 +01:00 [Information] Hangfire SQL objects installed.
+2018-09-23 13:40:19.592 +01:00 [Information] Starting Hangfire Server
+2018-09-23 13:40:19.597 +01:00 [Information] Using job storage: 'SQL Server: (local)@PayAjo'
+2018-09-23 13:40:19.597 +01:00 [Information] Using the following options for SQL Server job storage:
+2018-09-23 13:40:19.597 +01:00 [Information]     Queue poll interval: 00:00:15.
+2018-09-23 13:40:19.597 +01:00 [Information] Using the following options for Hangfire Server:
+2018-09-23 13:40:19.597 +01:00 [Information]     Worker count: 20
+2018-09-23 13:40:19.598 +01:00 [Information]     Listening queues: 'default'
+2018-09-23 13:40:19.598 +01:00 [Information]     Shutdown timeout: 00:00:15
+2018-09-23 13:40:19.598 +01:00 [Information]     Schedule polling interval: 00:00:15
+2018-09-23 13:40:26.505 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Collection"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.510 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"CollectionType"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.510 +01:00 [Warning] No type was specified for the decimal column '"CurrentBalance"' on entity type '"CustomerBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.511 +01:00 [Warning] No type was specified for the decimal column '"CurrentBalance"' on entity type '"MerchantAgentBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.511 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"MerchantBalance"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.511 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"MerchantBalanceSetting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.511 +01:00 [Warning] No type was specified for the decimal column '"Cost"' on entity type '"Notification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.511 +01:00 [Warning] No type was specified for the decimal column '"MinimumBalance"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.511 +01:00 [Warning] No type was specified for the decimal column '"SmsAmount"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.511 +01:00 [Warning] No type was specified for the decimal column '"SmsUnit"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.511 +01:00 [Warning] No type was specified for the decimal column '"TechAmount"' on entity type '"Setting"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.511 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Transaction"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.512 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"TransactionLog"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:26.512 +01:00 [Warning] No type was specified for the decimal column '"Amount"' on entity type '"Withdrawal"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-23 13:40:31.754 +01:00 [Information] I am currently @ the get customer registration 
+2018-09-23 13:45:20.180 +01:00 [Information] 1 servers were removed due to timeout

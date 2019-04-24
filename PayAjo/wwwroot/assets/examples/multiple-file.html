@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Admin UI Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
+    />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+
+    <!-- Custom Fonts from fonts.google.com -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> -->
+
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard-pp.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-kit.css" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/demo/demo.css" rel="stylesheet" />
+    <!-- CSS Just for Customising purpose -->
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+
+
+    <!-- Related css to this page -->
+    <link rel="stylesheet" href="../assets/vendors/jquery-file-upload/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="../assets/vendors/jquery-file-upload/css/jquery.fileupload.min.css">
+    <link rel="stylesheet" href="../assets/vendors/jquery-file-upload/css/jquery.fileupload-ui.min.css">
+    <!-- CSS adjustments for browsers with JavaScript disabled -->
+    <noscript>
+        <link rel="stylesheet" href="../assets/vendors/jquery-file-upload/css/jquery.fileupload-noscript.min.css">
+    </noscript>
+    <noscript>
+        <link rel="stylesheet" href="../assets/vendors/jquery-file-upload/css/jquery.fileupload-ui-noscript.min.css">
+    </noscript>
+  
+
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar sidebar-custom" data-color="#9a7f37">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+            <div class="logo">
+                <a href="#" class="simple-text logo-mini">
+                    <img src="../assets/img/eureka-logo.png" class="img-responsive" alt="Image">
+                </a>
+                <a href="#" class="simple-text logo-normal">
+                    Exolve
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav nav-custom">
+                    <li class="">
+                        <a href="../examples/dashboard.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#componentsExamples" aria-expanded="true">
+                            <i class="now-ui-icons education_atom"></i>
+                            <p>Components
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="componentsExamples">
+                            <ul class="nav">
+                                <li>
+                                    <a href="buttons.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">TYpography</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Buttons</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="slider.html">
+                                        <span class="sidebar-mini-icon">SP</span>
+                                        <span class="sidebar-normal">Slider & Progress Bar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="alert.html">
+                                        <span class="sidebar-mini-icon">A</span>
+                                        <span class="sidebar-normal">Alert</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="panel.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Panel</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#formsExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Forms
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="formsExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="form-element.html">
+                                        <span class="sidebar-mini-icon">FE</span>
+                                        <span class="sidebar-normal">Form Elements</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="form-Validations.html">
+                                        <span class="sidebar-mini-icon">FV</span>
+                                        <span class="sidebar-normal">Form Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="WizardValid.html">
+                                        <span class="sidebar-mini-icon">WV</span>
+                                        <span class="sidebar-normal">Wizard + Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="wysiwyg.html">
+                                        <span class="sidebar-mini-icon">W</span>
+                                        <span class="sidebar-normal">WYSIWYG Editor</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Form-plugin.html">
+                                        <span class="sidebar-mini-icon">FP</span>
+                                        <span class="sidebar-normal">Form Plugins</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="notification.html">
+                            <i class="now-ui-icons ui-1_bell-53"></i>
+                            <p>Notification</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Icons</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#tableExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_bullet-list-67"></i>
+                            <p>Tables
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="tableExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="simple-table.html">
+                                        <span class="sidebar-mini-icon">ST</span>
+                                        <span class="sidebar-normal">Simple Table</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="datatable.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Datatable</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#chartExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons business_chart-pie-36"></i>
+                            <p>Charts
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="chartExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="flow-chart.html">
+                                        <span class="sidebar-mini-icon">FC</span>
+                                        <span class="sidebar-normal">Flow Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="morris-chart.html">
+                                        <span class="sidebar-mini-icon">MC</span>
+                                        <span class="sidebar-normal">Morris Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="jquery-spark.html">
+                                        <span class="sidebar-mini-icon">JS</span>
+                                        <span class="sidebar-normal">JQuery Sparklines</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#galleryExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>Gallery
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="galleryExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="picture.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Picture</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="videos.html">
+                                        <span class="sidebar-mini-icon">V</span>
+                                        <span class="sidebar-normal">Video</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#file-uploadExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>File Uploader
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse show" id="file-uploadExamples" style="">
+                            <ul class="nav">
+                                <li >
+                                    <a href="dropzone.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Dropzone</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="multiple-file.html">
+                                        <span class="sidebar-mini-icon">MF</span>
+                                        <span class="sidebar-normal">Multiple File Uploader</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#mapExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons location_pin"></i>
+                            <p>Map
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="mapExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="google-map.html">
+                                        <span class="sidebar-mini-icon">GM</span>
+                                        <span class="sidebar-normal">Google Map</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="vector-map.html">
+                                        <span class="sidebar-mini-icon">VM</span>
+                                        <span class="sidebar-normal">Vector Map</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#pageExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Pages
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="pageExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="profile.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="timeline.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">Timeline</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mail.html">
+                                        <span class="sidebar-mini-icon">M</span>
+                                        <span class="sidebar-normal">Mail</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="invoice.html">
+                                        <span class="sidebar-mini-icon">I</span>
+                                        <span class="sidebar-normal">Invoice</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login-resgiter.html">
+                                        <span class="sidebar-mini-icon">LR</span>
+                                        <span class="sidebar-normal">Login & Register</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="search.html">
+                                        <span class="sidebar-mini-icon">S</span>
+                                        <span class="sidebar-normal">Search</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blank.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Blank</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-404.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 404</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-500.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 500</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- Sidebar -->
+
+
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <!-- BreadCrumb -->
+                        <ul class="breadcrumb breadcrumb-custom">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="multiple-file.html" class="breadcrumb-active">Multiple FIle Upload</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                </span>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="now-ui-icons media-2_sound-wave"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Stats</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons location_world"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Some Actions</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Notifications 1</a>
+                                    <a class="dropdown-item" href="#">Notifications 2</a>
+                                    <a class="dropdown-item" href="#">Notifications 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Account</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Messages
+                                        <span class="badge badge-gold">23</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">Sign out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-sm panel-header-custom">
+                <!-- <canvas id="bigDashboardChart"></canvas> -->
+            </div>
+            <div class="content content-custom">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="title">jQuery File Upload</h5>
+                        <p>File Upload widget with multiple file selection, drag and drop support...</p>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote">
+                            <p>File Upload widget with multiple file selection, drag&amp;drop support, progress bars, validation and preview images,
+                                audio and video for jQuery. Supports cross-domain, chunked and resumable file uploads and client-side image resizing.
+                                Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML
+                                form file uploads.</p>
+                        </blockquote>
+                        <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
+                            <!-- Redirect browsers with JavaScript disabled to the origin page -->
+                            <noscript>
+                                <input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/">
+                            </noscript>
+                            <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+                            <div class="row fileupload-buttonbar">
+                                <div class="col-lg-7">
+                                    <!-- The fileinput-button span is used to style the file input field as button -->
+                                    <span class="btn btn-success fileinput-button">
+                                        <i class="glyphicon glyphicon-plus"></i>
+                                        <span>Add files...</span>
+                                        <input type="file" name="files[]" multiple>
+                                    </span>
+                                    <button type="submit" class="btn btn-primary start">
+                                        <i class="glyphicon glyphicon-upload"></i>
+                                        <span>Start upload</span>
+                                    </button>
+                                    <button type="reset" class="btn btn-warning cancel">
+                                        <i class="glyphicon glyphicon-ban-circle"></i>
+                                        <span>Cancel upload</span>
+                                    </button>
+                                    <button type="button" class="btn btn-danger delete">
+                                        <i class="glyphicon glyphicon-trash"></i>
+                                        <span>Delete</span>
+                                    </button>
+                                    <!-- <input type="checkbox" class="toggle"> -->
+                                    <div class="checkbox">
+                                        <input id="ck1" type="checkbox" class="toggle">
+                                        <label for="ck1">
+                                             All items
+                                        </label>
+                                    </div>
+                        
+                                    <!-- The global file processing state -->
+                                    <span class="fileupload-process"></span>
+                                </div>
+                                <!-- The global progress state -->
+                                <div class="col-lg-5 fileupload-progress ">
+                                    <!-- The global progress bar -->
+                                    <div class="progress progress-striped active" role="progressbar">
+                                        <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                                    </div>
+                                    <!-- The extended global progress state -->
+                                    <div class="progress-extended">&nbsp;</div>
+                                </div>
+                            </div>
+                            <!-- The table listing the files available for upload/download -->
+                            <table role="presentation" class="table table-striped">
+                                <tbody class="files"></tbody>
+                            </table>
+                        </form>
+                        <br>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="well">
+                            <h4 class="bold">Demo Notes</h4>
+                            <ul>
+                                <li>The maximum file size for uploads in this demo is
+                                    <strong>999 KB</strong> (default file size is unlimited).</li>
+                                <li>Only image files (
+                                    <strong>JPG, GIF, PNG</strong>) are allowed in this demo (by default there is no file type restriction).</li>
+                                <li>Uploaded files will be deleted automatically after
+                                    <strong>5 minutes or less</strong> (demo files are stored in memory).</li>
+                                <li>You can
+                                    <strong>drag &amp; drop</strong> files from your desktop on this webpage (see
+                                    <a href="https://github.com/blueimp/jQuery-File-Upload/wiki/Browser-support">Browser support</a>).</li>
+                                <li>Please refer to the
+                                    <a href="https://github.com/blueimp/jQuery-File-Upload">project website</a> and
+                                    <a href="https://github.com/blueimp/jQuery-File-Upload/wiki">documentation</a> for more information.</li>
+                                <li>Built with the
+                                    <a href="http://getbootstrap.com/">Bootstrap</a> CSS framework and Icons from
+                                    <a href="http://glyphicons.com/">Glyphicons</a>.</li>
+                            </ul>
+                            <!-- The blueimp Gallery widget -->
+                            <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
+                                <div class="slides"></div>
+                                <h3 class="title">Sample</h3>
+                                <a class="prev">‹</a>
+                                <a class="next">›</a>
+                                <a class="close">×</a>
+                                <a class="play-pause"></a>
+                                <ol class="indicator"></ol>
+                            </div>
+                            <!-- The template to display files available for upload -->
+                            <script id="template-upload" type="text/x-tmpl">
+                            										{% for (var i=0, file; file=o.files[i]; i++) { %}
+                            										    <tr class="template-upload ">
+                            										        <td>
+                            										            <span class="preview"></span>
+                            										        </td>
+                            										        <td>
+                            										            <p class="name">{%=file.name%}</p>
+                            										            <strong class="error text-danger"></strong>
+                            										        </td>
+                            										        <td>
+                            										            <p class="size">Processing...</p>
+                            										            <div class="progress progress-striped active" role="progressbar"   ><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+                            										        </td>
+                            										        <td>
+                            										            {% if (!i && !o.options.autoUpload) { %}
+                            										                <button class="btn btn-primary start" disabled>
+                            										                    <i class="glyphicon glyphicon-upload"></i>
+                            										                    <span>Start</span>
+                            										                </button>
+                            										            {% } %}
+                            										            {% if (!i) { %}
+                            										                <button class="btn btn-warning cancel">
+                            										                    <i class="glyphicon glyphicon-ban-circle"></i>
+                            										                    <span>Cancel</span>
+                            										                </button>
+                            										            {% } %}
+                            										        </td>
+                            										    </tr>
+                            										{% } %}
+                            										</script>
+                            <!-- The template to display files available for download -->
+                            <script id="template-download" type="text/x-tmpl">
+                            										{% for (var i=0, file; file=o.files[i]; i++) { %}
+                            										    <tr class="template-download">
+                            										        <td>
+                            										            <span class="preview">
+                            										                {% if (file.thumbnailUrl) { %}
+                            										                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+                            										                {% } %}
+                            										            </span>
+                            										        </td>
+                            										        <td>
+                            										            <p class="name">
+                            										                {% if (file.url) { %}
+                            										                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+                            										                {% } else { %}
+                            										                    <span>{%=file.name%}</span>
+                            										                {% } %}
+                            										            </p>
+                            										            {% if (file.error) { %}
+                            										                <div><span class="label label-danger">Error</span> {%=file.error%}</div>
+                            										            {% } %}
+                            										        </td>
+                            										        <td>
+                            										            <span class="size">{%=o.formatFileSize(file.size)%}</span>
+                            										        </td>
+                            										        <td>
+                            										            {% if (file.deleteUrl) { %}
+                            										                <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+                            										                    <i class="glyphicon glyphicon-trash"></i>
+                            										                    <span>Delete</span>
+                            										                </button>
+                            										                 <div class="m-checkbox">
+                            										                	<input type="checkbox" name="delete" value="1" class="toggle">										                				                									                	
+                            										                </div>
+                            										            {% } else { %}
+                            										                <button class="btn btn-warning cancel">
+                            										                    <i class="glyphicon glyphicon-ban-circle"></i>
+                            										                    <span>Cancel</span>
+                            										                </button>
+                            										            {% } %}
+                            										        </td>
+                            										    </tr>
+                            										{% } %}
+                            										</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.min.js"></script>
+
+<script type="text/javascript" src="../assets/vendors/jquery-ui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/jquery-searchable/js/jquery.searchable.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/jquery-fullscreen/js/jquery.fullscreen.min.js"></script>
+
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chart JS -->
+<script src="../assets/js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/now-ui-dashboard.js?v=1.0.1"></script>
+<script src="../assets/js/now-ui-kit.js"></script>
+<script src="../assets/js/custom.js"></script>
+<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/demo/demo.js"></script>
+
+<!-- Bootstrap Plugins -->
+<script type="text/javascript" src="../assets/plugins/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="../assets/plugins/bootstrap-switch.js"></script>
+<script type="text/javascript" src="../assets/plugins/jquery.sharrre.js"></script>
+<script type="text/javascript" src="../assets/plugins/nouislider.min.js"></script>
+
+<!-- Related JavaScript Library to This Pagee -->
+<!-- The Templates plugin is included to render the upload/download listings -->
+<script src="../assets/vendors/jQuery-File-Upload/js/tmpl.min.js"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<script src="../assets/vendors/jQuery-File-Upload/js/load-image.all.min.js"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<script src="../assets/vendors/jQuery-File-Upload/js/canvas-to-blob.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/jquery-file-upload/js/jquery.blueimp-gallery.min.js"></script>
+<script src="../assets/vendors/jquery-file-upload/js/jquery.iframe-transport.min.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="../assets/vendors/jquery-file-upload/js/jquery.fileupload.min.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="../assets/vendors/jquery-file-upload/js/jquery.fileupload-process.min.js"></script>
+<!-- The File Upload image preview & resize plugin -->
+<script src="../assets/vendors/jquery-file-upload/js/jquery.fileupload-image.min.js"></script>
+<!-- The File Upload audio preview plugin -->
+<script src="../assets/vendors/jquery-file-upload/js/jquery.fileupload-audio.min.js"></script>
+<!-- The File Upload video preview plugin -->
+<script src="../assets/vendors/jquery-file-upload/js/jquery.fileupload-video.min.js"></script>
+<!-- The File Upload validation plugin -->
+<script src="../assets/vendors/jquery-file-upload/js/jquery.fileupload-validate.min.js"></script>
+<!-- The File Upload user interface plugin -->
+<script src="../assets/vendors/jquery-file-upload/js/jquery.fileupload-ui.min.js"></script>
+
+<!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
+<!--[if (gte IE 8)&(lt IE 10)]>
+		<script src="../assets/vendors/jquery-file-upload/js/cors/jquery.xdr-transport.js"></script>
+		<![endif]-->
+
+<!-- Yeptemplate Vendors JS Script -->
+<!-- Please use *.min.js in production -->
+<!-- <script type="text/javascript" src="../assets/js/yep-vendors.js"></script> -->
+
+
+<!-- Plugins Script -->
+<script type="text/javascript">
+    // Blueimp jquery file upload
+    $(function () {
+        'use strict';
+
+        // Initialize the jQuery File Upload widget:
+        $('#fileupload').fileupload({
+            // Uncomment the following to send cross-domain cookies:
+            //xhrFields: {withCredentials: true},
+            url: 'server/php/'
+        });
+
+        // Enable iframe cross-domain access via redirect option:
+        $('#fileupload').fileupload(
+            'option',
+            'redirect',
+            window.location.href.replace(
+                /\/[^\/]*$/,
+                '/cors/result.html?%s'
+            )
+        );
+
+        if (window.location.hostname === 'blueimp.github.io') {
+            // Demo settings:
+            $('#fileupload').fileupload('option', {
+                url: '//jquery-file-upload.appspot.com/',
+                // Enable image resizing, except for Android and Opera,
+                // which actually support image resizing, but fail to
+                // send Blob objects via XHR requests:
+                disableImageResize: /Android(?!.*Chrome)|Opera/
+                    .test(window.navigator.userAgent),
+                maxFileSize: 999000,
+                acceptFileTypes: /(\.|\/)(gif|jpe?g|png)$/i
+            });
+            // Upload server status check for browsers with CORS support:
+            if ($.support.cors) {
+                $.ajax({
+                    url: '//jquery-file-upload.appspot.com/',
+                    type: 'HEAD'
+                }).fail(function () {
+                    $('<div class="alert alert-danger"/>')
+                        .text('Upload server currently unavailable - ' +
+                        new Date())
+                        .appendTo('#fileupload');
+                });
+            }
+        } else {
+            // Load existing files:
+            $('#fileupload').addClass('fileupload-processing');
+            $.ajax({
+                // Uncomment the following to send cross-domain cookies:
+                //xhrFields: {withCredentials: true},
+                url: $('#fileupload').fileupload('option', 'url'),
+                dataType: 'json',
+                context: $('#fileupload')[0]
+            }).always(function () {
+                $(this).removeClass('fileupload-processing');
+            }).done(function (result) {
+                $(this).fileupload('option', 'done')
+                    .call(this, $.Event('done'), { result: result });
+            });
+        }
+
+    });
+
+
+</script>
+
+
+</html>

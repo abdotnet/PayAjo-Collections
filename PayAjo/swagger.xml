@@ -1,0 +1,1451 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PayAjo</name>
+    </assembly>
+    <members>
+        <member name="T:PayAjo.Controllers.Api.AccountController">
+            <summary>
+            Account controller 
+            </summary>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.#ctor(Microsoft.AspNetCore.Identity.SignInManager{PayAjo.Domain.Core.Models.UserModel},Microsoft.AspNetCore.Identity.UserManager{PayAjo.Domain.Core.Models.UserModel},Microsoft.Extensions.Configuration.IConfiguration,PayAjo.Data.Repository.IUserRepository,AutoMapper.IMapper)">
+            <summary>
+            constructor
+            </summary>
+            <param name="signInManager"></param>
+            <param name="userManager"></param>
+            <param name="config"></param>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.CreateToken(PayAjo.Domain.Core.Models.LoginModel)">
+            <summary>
+            Create token
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.GetUsers(System.Int32,System.Int32)">
+            <summary>
+             Get paged users
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.GetAllUsers">
+            <summary>
+            Get all users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.GetUserById(System.Int64)">
+            <summary>
+            Get User by Id
+            </summary>
+            <param name="userid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.UpdateUserProfile(PayAjo.Domain.Core.Models.UserModel)">
+            <summary>
+            Update user profile
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.UpdateUserWebProfile(PayAjo.Domain.Core.Models.UserWebModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.RegisterWebUser(PayAjo.Domain.Core.Models.UserWebModel)">
+            <summary>
+            Register User
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.GetAllAdminUserSearch(PayAjo.Domain.Core.Models.SearchModel)">
+            <summary>
+            Admin records 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.GetCustomerUser(PayAjo.Domain.Core.Models.SearchModel)">
+            <summary>
+             Get all customer users
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.ChangePassword(PayAjo.Domain.Core.Models.PasswordChangeModel)">
+            <summary>
+             Change Password
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.CreateAgent(PayAjo.Domain.Core.Models.AgentModel)">
+            <summary>
+            Create Agent
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.ValidatePhoneNo(System.String)">
+            <summary>
+             Validate phone No
+            </summary>
+            <param name="phoneno"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.GetAgentForMerchant(System.Int64)">
+            <summary>
+            Get all merchant agent users 
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.GetListOfInActiveUsers(System.Int64)">
+            <summary>
+            Get list of in active users
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.ActivateUserAccount(PayAjo.Domain.Core.Models.NokUpdateModel)">
+             <summary>
+             Active account of in active user
+             </summary>
+             <param name="model"></param>
+             <returns></returns>
+            
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.DeActivateUserAccount(PayAjo.Domain.Core.Models.DeAcivateUserModel)">
+            <summary>
+            Deactivate user and customer 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.PasswordResetCode(System.String)">
+            <summary>
+            Either phone no or username ..to get the password reset code  ..
+            </summary>
+            <param name="identity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.AccountController.PasswordResetCode(PayAjo.Domain.Core.Models.RecoverPassword)">
+            <summary>
+            Update password using this api
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Controllers.Api.ApiController">
+            <summary>
+            Api base controller
+            </summary>
+        </member>
+        <member name="P:PayAjo.Controllers.Api.ApiController.UserId">
+            <summary>
+            get user id
+            </summary>
+        </member>
+        <member name="P:PayAjo.Controllers.Api.ApiController.MerchantId">
+            <summary>
+            Merchant Id
+            </summary>
+        </member>
+        <member name="T:PayAjo.Controllers.Api.CollectionController">
+            <summary>
+            Collection controller
+            </summary>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CollectionController.#ctor">
+            <summary>
+            Collection controller 
+            </summary>
+        </member>
+        <member name="T:PayAjo.Controllers.Api.CustomerController">
+            <summary>
+            Customer Controller ..
+            </summary>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,PayAjo.Data.Repository.IUserRepository,PayAjo.Domain.Core.Interfaces.ICustomerService,Microsoft.AspNetCore.Hosting.IHostingEnvironment,PayAjo.Domain.Core.Interfaces.INotificationService)">
+            <summary>
+             Customer controller  ..
+            </summary>
+            <param name="signInManager"></param>
+            <param name="userManager"></param>
+            <param name="config"></param>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+            <param name="customerService"></param>
+            <param name="env"></param>
+            <param name="notify"></param>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.GetCustomer(System.Int32,System.Int32)">
+            <summary>
+            Get Customer information paged
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.GetCustomer(PayAjo.Domain.Core.Models.SearchModel)">
+            <summary>
+            get customer information ..
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.GetActiveCustomer(System.Int32,System.Int32)">
+            <summary>
+            Get active customers
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.GetInActiveCustomer(System.Int32,System.Int32)">
+            <summary>
+            Get in active customers
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.CreateMobileCustomer(PayAjo.Domain.Core.Models.CustomerLoginModel)">
+            <summary>
+            register customers
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.CreateWebCustomer(PayAjo.Domain.Core.Models.CustomerWebLoginModel)">
+            <summary>
+            Create registration
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.ResetCustomerBalance(System.Int64)">
+            <summary>
+            Reset customer balance 
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.GetCustomers">
+            <summary>
+            Get all customers 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.GetCustomerById(System.Int64)">
+            <summary>
+            Get customer by customer Id
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.GetCustomerByCustId(System.Int64)">
+            <summary>
+             Get customer by customer Id
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.UpdateCustomer(PayAjo.Domain.Core.Models.CustomerModel)">
+            <summary>
+            Update customer 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.UploadPicture(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.UploadFile">
+            <summary>
+            Upload file .
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.SendSms(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="phoneno"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.GetCustomerForMerchant(System.Int64)">
+            <summary>
+            Get all customer for a merchant 
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.ActivateCustomer(PayAjo.Domain.Core.Models.CustomerUpdateModel)">
+             <summary>
+            Activate customers
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.DeActivateCustomer(PayAjo.Domain.Core.Models.CustomerUpdateModel)">
+            <summary>
+             de inactive customers 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.GetAllInActiveCustomers(System.Int64)">
+            <summary>
+            Get all inactive customers 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.GetCustomerNameByCode(System.String)">
+            <summary>
+            Get Customer code by customer name..
+            </summary>
+            <param name="customerCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.SendFridayMessages(System.Int64)">
+            <summary>
+            Send weekend messages 
+            </summary>
+            <param name="merchantid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.CustomerController.SendToSingleMasterCode(System.String)">
+            <summary>
+            Send sms using customer code 
+            </summary>
+            <param name="customercode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Controllers.Api.MerchantController">
+            <summary>
+            Merchant portal 
+            </summary>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.MerchantController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,PayAjo.Data.Repository.IUserRepository,PayAjo.Domain.Core.Interfaces.IMerchantService)">
+            <summary>
+            Merchant controller 
+            </summary>
+            <param name="config"></param>
+            <param name="repo"></param>
+            <param name="merchantService"></param>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.MerchantController.GetMerchants">
+            <summary>
+             Get Merchant 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.MerchantController.CreateMobileMerchant(PayAjo.Domain.Core.Models.MerchantLoginModel)">
+            <summary>
+            Create mobile merchant
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.MerchantController.CreateMobileAgent(PayAjo.Domain.Core.Models.AgentModel)">
+            <summary>
+            Create Mobile agent  ..
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.MerchantController.MerchantAgentDashboardInfo(System.Int64)">
+            <summary>
+             Merchant agent transaction information..
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.MerchantController.GetMerchantAdminDashboard(System.Int64)">
+            <summary>
+            Get merchant admin dashboard ..
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Controllers.Api.ReportController">
+            <summary>
+            Reporting Api
+            </summary>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.ReportController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,PayAjo.Data.Repository.IUserRepository,AutoMapper.IMapper,PayAjo.Domain.Core.Interfaces.IMerchantService,PayAjo.Domain.Core.Interfaces.IReportingService)">
+            <summary>
+            Report controller  
+            </summary>
+            <param name="config"></param>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+            <param name="merchantService"></param>
+            <param name="reportService"></param>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.ReportController.GetDashboard">
+            <summary>
+            Get dashboard 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.ReportController.CreateMerchant(PayAjo.Domain.Core.Models.MerchantModel)">
+            <summary>
+            Create Merchant
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.ReportController.GetMerchants">
+            <summary>
+            Get merchants
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.ReportController.CreateMobileMerchant(PayAjo.Domain.Core.Models.MerchantLoginModel)">
+            <summary>
+            Create mobile merchant
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.ReportController.CreateMobileAgent(PayAjo.Domain.Core.Models.AgentModel)">
+            <summary>
+            Create mobile agent
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.ReportController.MerchantAgentDashboardInfo(System.Int64)">
+            <summary>
+             Merchant agent transaction information..
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.ReportController.GetMerchantAdminDashboard(System.Int64)">
+            <summary>
+            Get merchant admin dashboard
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Controllers.Api.SettingController">
+            <summary>
+            Setting controller 
+            </summary>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.SettingController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,PayAjo.Data.Repository.IUserRepository,AutoMapper.IMapper,PayAjo.Domain.Core.Interfaces.ISettingService)">
+            <summary>
+            Setttings controller 
+            </summary>
+            <param name="config"></param>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+            <param name="settingService"></param>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.SettingController.PostSettings(PayAjo.Domain.Core.Models.SettingModel)">
+            <summary>
+            Post settings
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.SettingController.GetSettings">
+            <summary>
+            Get settings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.SettingController.GetSetting(System.Int64)">
+            <summary>
+            Get settings by id 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.SettingController.DeleteSettings(System.Int64)">
+            <summary>
+            Delete settings by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Controllers.Api.SettlementController">
+            <summary>
+            Settlement Engine  ..
+            </summary>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.SettlementController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,PayAjo.Data.Repository.IUserRepository,AutoMapper.IMapper,PayAjo.Domain.Infrastucture.HangFire.IHangFireService,PayAjo.Domain.Core.Interfaces.ISettlementService)">
+            <summary>
+            Settlement controller  
+            </summary>
+            <param name="config"></param>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+            <param name="iHangFireService"></param>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.SettlementController.TechJobDebiCustomerBalance">
+            <summary>
+            Tech job debit customer balance 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.SettlementController.SmsJobs">
+            <summary>
+            Sms Jobs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.SettlementController.SmsNotification">
+            <summary>
+            Sms notification
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Controllers.Api.TransactionController">
+            <summary>
+            Transaction controller  ..
+            </summary>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,PayAjo.Data.Repository.IUserRepository,AutoMapper.IMapper,PayAjo.Domain.Core.Interfaces.ITransactionService)">
+            <summary>
+            Transaction controller 
+            </summary>
+            <param name="config"></param>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+            <param name="transactionService"></param>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.GetCreditTransaction(System.Int32,System.Int32)">
+            <summary>
+            Get credit transactions
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.GetDebitTransaction(System.Int32,System.Int32)">
+            <summary>
+            Get all debit transactions
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.GetTransaction(System.Int32,System.Int32)">
+            <summary>
+            Get all paged transactions
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.GetTransaction(PayAjo.Domain.Core.Models.SearchModel)">
+            <summary>
+            Get transaction search 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.PostTransaction(PayAjo.Domain.Core.Models.TransactionModel)">
+            <summary>
+            post transaction
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.GetTransactionLog(System.Int32,System.Int32)">
+            <summary>
+            get transaction log
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.PostTransactionLog(PayAjo.Domain.Core.Models.TransactionLogger)">
+            <summary>
+            post transaction log
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.TransactionApproval(System.Int64)">
+            <summary>
+            APprove transaction..
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.TransactionDeline(System.Int64)">
+            <summary>
+             Transaction decline
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.GetTransactions">
+            <summary>
+            get transacions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.GetCustomerTransactions(System.Int64)">
+            <summary>
+            get customer transaction by customer id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.GetCustomerBalance(System.Int64)">
+            <summary>
+            get Customer balance 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.GetTransactionByAgentUserId(System.Int64)">
+            <summary>
+            Get transaction by Agent user Id
+            </summary>
+            <param name="userid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.GetTransactionsByMerchantId(System.Int64)">
+            <summary>
+            Get all transaction by merchantId
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.UpdateTransaction">
+            <summary>
+            Update transaction
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.GetCustomerTotalCreditDaily(System.Int64)">
+            <summary>
+            Get customer total credit
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.TransactionController.PostOfflineTransaction(PayAjo.Domain.Core.Models.OfflineModel)">
+            <summary>
+            Post offline transaction 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Controllers.Api.WithdrawalController">
+            <summary>
+            Withdrawal controller 
+            </summary>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,PayAjo.Data.Repository.IUserRepository,AutoMapper.IMapper,PayAjo.Domain.Core.Interfaces.IWithdrawalService)">
+            <summary>
+            Withdrawal controller 
+            </summary>
+            <param name="config"></param>
+            <param name="repo"></param>
+            <param name="mapper"></param>
+            <param name="withdrawService"></param>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.GetWithdrawals(System.Int32,System.Int32)">
+            <summary>
+            Get withdrawals 
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.GetApprovedWithdrawals(System.Int32,System.Int32)">
+            <summary>
+            Get approved withdrawal
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.GetPaidWithdrawals(System.Int32,System.Int32)">
+            <summary>
+            Get paid withdrawal
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.GetWithdrawalRecord(PayAjo.Domain.Core.Models.SearchModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.PostWithdrawal(PayAjo.Domain.Core.Models.WithdrawalModel)">
+            <summary>
+            post withdrawal 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.PostWithdrawalWeb(PayAjo.Domain.Core.Models.WithdrawalLogModel)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.GetAllWithdrawal">
+            <summary>
+            get all withdrawal 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.GetWithdrawal(System.Int64)">
+            <summary>
+            get withdrawal by merchant Id
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.WithdrawalByMerchantAgent(System.Int64)">
+            <summary>
+            get withdrawal by merchant agent id
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.GetTransactionByAgentUserId(System.Int64)">
+            <summary>
+            Get transaction agent userId
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.ApproveWidthdrawAmount(PayAjo.Domain.Core.Models.WithdrawApprovalModel)">
+            <summary>
+            Approve withdrawal amount..
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.PaidWidthdrawAmount(PayAjo.Domain.Core.Models.WithdrawApprovalModel)">
+            <summary>
+            Paid withdrawal Amount
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Controllers.Api.WithdrawalController.WidthdrawAmountDeline(System.Int64)">
+            <summary>
+            Withdrawal amount decline 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Data.Entities.MerchantBalanceSetting">
+            <summary>
+            To use this table two merchant must be created @ a time and the code is use to 
+            tire them together  .. 
+            </summary>
+        </member>
+        <member name="P:PayAjo.Data.Entities.MerchantBalanceSetting.MerchantMapCode">
+            <summary>
+            Code to map two merchant together   ..  
+            </summary>
+        </member>
+        <member name="T:PayAjo.Data.Entities.ChargeType">
+            <summary>
+            Charge Type
+            </summary>
+        </member>
+        <member name="T:PayAjo.Data.Entities.NotificationType">
+            <summary>
+            Notification Type
+            </summary>
+        </member>
+        <member name="T:PayAjo.Data.Entities.NotificationSystem">
+            <summary>
+            Notification System
+            </summary>
+        </member>
+        <member name="P:PayAjo.Data.Entities.Transaction.TransactionMapCode">
+             <summary>
+            helps to hold same code for settlement between other merchant and admin merchant 
+             </summary>
+        </member>
+        <member name="P:PayAjo.Data.Entities.TransactionLog.TransactionMapCode">
+             <summary>
+            helps to hold same code for settlement between other merchant and admin merchant 
+             </summary>
+        </member>
+        <member name="M:PayAjo.Data.Repository.UserRepository.ValidateUser(System.String,System.String)">
+            <summary>
+             Validate User ...
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Data.Repository.UserRepository.GetMerchantAgentUsers(System.Int64)">
+            <summary>
+            Get Merchant Agent Users
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Data.Repository.UserRepository.GetListOfInActiveCustomers(System.Int64)">
+            <summary>
+            Get list of active customer ..
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Domain.Core.Enum.WithdrawalStatus">
+            <summary>
+            Withdrawal Status
+            </summary>
+        </member>
+        <member name="F:PayAjo.Domain.Core.Enum.WithdrawalStatus.Pending">
+            <summary>
+            Pending
+            </summary>
+        </member>
+        <member name="F:PayAjo.Domain.Core.Enum.WithdrawalStatus.Approved">
+            <summary>
+            Approved
+            </summary>
+        </member>
+        <member name="F:PayAjo.Domain.Core.Enum.WithdrawalStatus.Paid">
+            <summary>
+            Paid
+            </summary>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Interfaces.INotificationService.SendSms(System.String[],System.String)">
+            <summary>
+            
+            </summary>
+            <param name="phoneNos"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Models.Model.GenerateTransactionNo">
+            <summary>
+            Generate transaction no
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Models.Model.GetCollectionCode">
+            <summary>
+            Generate collection code  ...
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Models.Model.GetCustomerCode">
+            <summary>
+            Get Customer code  ..
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Domain.Core.Services.CustomerService">
+            <summary>
+            Customer Services
+            </summary>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.CustomerService.#ctor(Microsoft.Extensions.Logging.ILogger{PayAjo.Domain.Core.Services.CustomerService},PayAjo.Data.PayAjoContext,Microsoft.Extensions.Configuration.IConfiguration,AutoMapper.IMapper,PayAjo.Data.Repository.IUserRepository,PayAjo.Domain.Core.Interfaces.ITransactionService,PayAjo.Domain.Core.Interfaces.INotificationService)">
+            <summary>
+             Customer Service controller  ..
+            </summary>
+            <param name="logger"></param>
+            <param name="repo"></param>
+            <param name="config"></param>
+            <param name="mapper"></param>
+            <param name="userRepo"></param>
+            <param name="service"></param>
+            <param name="notify"></param>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.CustomerService.GetCustomers(System.String,System.Int64,PayAjo.Domain.Core.Models.StatusCode,System.Int32,System.Int32)">
+            <summary>
+            Get customer information..
+            </summary>
+            <param name="search"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.CustomerService.DeleteCustomer(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.CustomerService.GetCustomerForMerchant(System.Int64)">
+            <summary>
+            merchantId
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.CustomerService.GetInActiveCustomers(System.Int64)">
+            <summary>
+            Get all inactive customers ..
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.CustomerService.ActivateCustomer(PayAjo.Domain.Core.Models.CustomerUpdateModel)">
+            <summary>
+             Active Customers 
+            </summary>
+            <param name="merchantId"></param>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.CustomerService.GetCustomerName(System.String,System.Int64)">
+            <summary>
+            get Customer name by customer code ...
+            </summary>
+            <param name="customerCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.CustomerService.UpdateCustomerInfo">
+            <summary>
+            Send Friday sms 
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.MerchantService.#ctor(Microsoft.Extensions.Logging.ILogger{PayAjo.Domain.Core.Services.MerchantService},PayAjo.Data.PayAjoContext,Microsoft.Extensions.Configuration.IConfiguration,AutoMapper.IMapper,PayAjo.Data.Repository.IUserRepository)">
+            <summary>
+            Merchant service  ..
+            </summary>
+            <param name="logger"></param>
+            <param name="repo"></param>
+            <param name="config"></param>
+            <param name="mapper"></param>
+            <param name="userRepo"></param>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.MerchantService.GetAgentDashboard(System.Int64)">
+            <summary>
+            Get agent dashboard information .. 
+            </summary>
+            <param name="agentUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.MerchantService.GetAdminDashboard(System.Int64)">
+            <summary>
+            Get agent dashboard information .. 
+            </summary>
+            <param name="agentUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Domain.Core.Services.NotificationService">
+            <summary>
+            Notification service  ..
+            </summary>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,PayAjo.Data.PayAjoContext,PayAjo.Domain.Core.Interfaces.ITransactionService)">
+            <summary>
+            Notification service
+            </summary>
+            <param name="config"></param>
+            <param name="repo"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.#ctor">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.SendSms(System.String[],System.String)">
+            <summary>
+             Send sms notification .
+            </summary>
+            <param name="phoneNos"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.GetErrorDescription(System.String)">
+            <summary>
+             Get error description ...
+            </summary>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.SendSmsKudiJob">
+            <summary>
+            Expectation is to run background job to fire every item on notification table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.SaveSms(System.String,System.String,System.Int64,System.String,System.Int64,System.Int64,System.String,System.String,System.String)">
+            <summary>
+            Save Sms
+            </summary>
+            <param name="message"></param>
+            <param name="sender"></param>
+            <param name="createdBy"></param>
+            <param name="recipient"></param>
+            <param name="customerId"></param>
+            <param name="merchantId"></param>
+            <param name="cost"></param>
+            <param name="status"></param>
+            <param name="totalSent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.SendSmsKudi(System.String[],System.String)">
+            <summary>
+            Send Sms Kudi
+            </summary>
+            <param name="phoneNo"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.SendEBulkSms(System.String,System.String,System.String[],System.Int32)">
+            <summary>
+            Send EBulk Sms
+            </summary>
+            <param name="senderName"></param>
+            <param name="message"></param>
+            <param name="recipients"></param>
+            <param name="flash"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.SendSmsNotification1(System.Int64)">
+            <summary>
+            Send sms notification ...
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.SendSmsNotificationAsync(System.Int64)">
+            <summary>
+            Send notification Async
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.SendSmsNotificationToCustomerCodeAsync(System.String)">
+            <summary>
+            Send Sms Notification to customers code 
+            </summary>
+            <param name="customerCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.NotificationService.ApplyTechFeeChargesNotificationAsync">
+            <summary>
+            Apply Tech fee charges to notification
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.ReportingService.GetDashboard(System.Int64)">
+            <summary>
+            Dashboard information
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="P:PayAjo.Domain.Core.Services.Service.CustomerCode">
+            <summary>
+            Customer Code 
+            </summary>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.SettlementService.GetSmsNotification(System.Int64)">
+            <summary>
+            get Sms notification ..
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Domain.Core.Services.TransactionService">
+            <summary>
+            Transaction
+            </summary>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.#ctor(PayAjo.Data.PayAjoContext,Microsoft.Extensions.Configuration.IConfiguration,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+            <param name="config"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.PostTransaction(PayAjo.Domain.Core.Models.TransactionModel)">
+            <summary>
+            Check if there is data on the customer balance table is not insert and post to transaction table 
+            if data is already on customer balance table update then post to transaction table .
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.PostMerchantAgentJobBalance(System.ValueTuple{System.Int64,System.Int64},System.Int64,System.Decimal)">
+            <summary>
+            There is a challenge using the background service, it uses the system created by to tag customer merchant which is wrong
+            So it would give inaccurate result  .... there by suspended for now.. 
+            </summary>
+            <param name="_merchant"></param>
+            <param name="createdBy"></param>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.PostMerchantJobBalance(System.ValueTuple{System.Int64,System.Int64},System.Int64,System.Decimal)">
+            <summary>
+            Debit customer merchant and credit system merchant table.. 
+            </summary>
+            <param name="merchant"></param>
+            <param name="createdBy"></param>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.PostMerchantAgentBalance(System.Int64,System.Nullable{System.Int64},System.Decimal)">
+            <summary>
+            Post merchant agent balance  
+            </summary>
+            <param name="merchantId"></param>
+            <param name="agentUserId"></param>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.PostMerchantBalance(System.Int64,System.Nullable{System.Int64},System.Decimal)">
+            <summary>
+            Post merchant balance 
+            </summary>
+            <param name="merchantId"></param>
+            <param name="agentUserId"></param>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.GetAllTransactions">
+            <summary>
+             Get all transactions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.GetCustomerTransactions(System.Int64)">
+            <summary>
+            Get Customer transaction ..
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.GetCustomerCurrentBalance(System.Int64)">
+            <summary>
+             Get customer Current balance
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.GetTransactionByAgentUserId(System.Int64)">
+            <summary>
+            Transaction agent user id
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.GetTransactionByMerchantId(System.Int64)">
+            <summary>
+            Transaction merchant
+            </summary>
+            <param name="merchantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.GetCustomerTotalCredit(System.Int64)">
+            <summary>
+             Get customer total credit
+            </summary>
+            <param name="customerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.PostOfflineTransaction(PayAjo.Domain.Core.Models.OfflineModel)">
+            <summary>
+            Post offline information of but the customer , merchant and agent
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.TransactionService.GetMerchantTransactions(System.String,System.Int64,PayAjo.Domain.Infrastucture.TransType,System.Int32,System.Int32)">
+            <summary>
+            Get transaction for merchants ..
+            </summary>
+            <param name="search"></param>
+            <param name="UserId"></param>
+            <param name="type"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Domain.Core.Services.WithdrawalService">
+            <summary>
+            Withdrawal Service
+            </summary>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.WithdrawalService.#ctor(PayAjo.Data.PayAjoContext,PayAjo.Domain.Core.Interfaces.ITransactionService,PayAjo.Domain.Core.Interfaces.INotificationService)">
+            <summary>
+            Withdrawal Service
+            </summary>
+            <param name="repo"></param>
+            <param name="tranService"></param>
+            <param name="notify"></param>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.WithdrawalService.GetWithdrawalsByMerchant(System.String,System.Int64,PayAjo.Domain.Infrastucture.WithdrawalType,System.Int32,System.Int32)">
+            <summary>
+            Get withdrawals by merchant ...
+            </summary>
+            <param name="search"></param>
+            <param name="UserId"></param>
+            <param name="type"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.WithdrawalService.PostWithdrawal(PayAjo.Domain.Core.Models.WithdrawalModel)">
+            <summary>
+            Post withdrawal
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Core.Services.WithdrawalService.GetAllWithdrawal">
+            <summary>
+            Get all widthdrawal
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Domain.Infrastucture.Exceptions.ExceptionHandler">
+            <summary>
+            Exception handler 
+            </summary>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.Exceptions.ExceptionHandler.Get(Microsoft.AspNetCore.Http.HttpContext,System.Exception)">
+            <summary>
+            Get exception details 
+            </summary>
+            <param name="context"></param>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.Extension.ClaimsExtension.GetUserId(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Get user id 
+            </summary>
+            <param name="principal"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.Extension.Extension.Assign``1(``0,System.Object,System.String[])">
+            <summary>
+            Update properties with properties of the object Supplied (typically anonymous)
+            </summary>
+            <typeparam name="T">Type of Source Object</typeparam>
+            <param name="destination">Object whose property you want to update</param>
+            <param name="source">destination object (typically anonymous) you want to take values from</param>
+            <returns>Update reference to same Object</returns>
+        </member>
+        <member name="T:PayAjo.Domain.Infrastucture.HangFire.HangFireService">
+            <summary>
+             Hangfire back ground service  ..
+            </summary>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.HangFire.HangFireService.#ctor(PayAjo.Data.PayAjoContext,PayAjo.Domain.Core.Interfaces.ITransactionService,Microsoft.Extensions.Configuration.IConfiguration,PayAjo.Domain.Core.Interfaces.INotificationService)">
+            <summary>
+            Hang fire service constructor 
+            </summary>
+            <param name="repo"></param>
+            <param name="tranService"></param>
+        </member>
+        <member name="P:PayAjo.Domain.Infrastucture.HangFire.HangFireService.GetCustomerBalance">
+            <summary>
+             Get Customer Balance
+            </summary>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.HangFire.HangFireService.ResetTechDateJob">
+            <summary>
+             Date reset Job
+             check if the tech date is greater than 30 day should be reset
+             Update start and end date with  the resent date ..
+             set ischargeable on customer balance to true.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.HangFire.HangFireService.DebitTechCustomerBalanceOnIsChargeableJob">
+            <summary>
+             Anytime ischargeable is true debit customer balance and post debit transactions 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.HangFire.HangFireService.WeeklySmsDateResetJob">
+            <summary>
+            Weekly Sms date reset job
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.HangFire.HangFireService.SendWeeklySmsJob">
+            <summary>
+             Debit Customer balance and post debit to transaction
+             For weekly sms
+             Send the actual Sms..
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.HangFire.HangFireService.SendSmsHangFireNotification">
+            <summary>
+            Send Sms HangFire Notification ...
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.HangFire.IHangFireService.ResetTechDateJob">
+            <summary>
+            Reset tech date job
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.HangFire.IHangFireService.DebitTechCustomerBalanceOnIsChargeableJob">
+            <summary>
+            Debit tech customer balance ischargeable
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.HangFire.IHangFireService.WeeklySmsDateResetJob">
+            <summary>
+            Weekly Sms Date Reset Job
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.HangFire.IHangFireService.SendWeeklySmsJob">
+            <summary>
+            Sms weekly Sms job
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.HangFire.IHangFireService.SendSmsHangFireNotification">
+            <summary>
+            Send Sms HangFire Notification ..
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.Notification.EmailNotification.SendEmail(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Take single email and send message to it , FilePath : specify the path of the d file  ..
+            </summary>
+            <param name="email"></param>
+            <param name="subject"></param>
+            <param name="message"></param>
+            <param name="ccEmail"></param>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.Notification.EmailNotification.SendEmail(System.String[],System.String,System.String,System.String,System.String)">
+            <summary>
+            Take Array of emails and send a single message to it , FilePath : specify the path of the file  ..
+            </summary>
+            <param name="email"></param>
+            <param name="subject"></param>
+            <param name="message"></param>
+            <param name="ccEmail"></param>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Infrastucture.Pagination`1.AdjacentIndexes(System.Int32)">
+            <summary>
+            Returns an array containing page indexes for pages immediately adjecent to the current page.
+            The span indicates how many pages indexes to each side of the current page should be returned
+            </summary>
+            <param name="span"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Middleware.MiddlewareConfig.ConfigureJwtAuthService(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            Configure Jwt authentication service  .. 
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:PayAjo.Domain.Middleware.ValidateAntiForgeryTokenMiddleware">
+            <summary>
+            Middle ware to validate antiforgery token
+            </summary>
+        </member>
+        <member name="M:PayAjo.Domain.Middleware.ValidateAntiForgeryTokenMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.AspNetCore.Antiforgery.IAntiforgery)">
+            <summary>
+            Validate anti forgery token
+            </summary>
+            <param name="next"></param>
+            <param name="antiforgery"></param>
+        </member>
+        <member name="M:PayAjo.Domain.Middleware.ValidateAntiForgeryTokenMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+             Invoke context function
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Domain.Middleware.ValidateModelAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            OnActionExecuting
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:PayAjo.Program">
+            <summary>
+            Start up program ...
+            </summary>
+        </member>
+        <member name="M:PayAjo.Program.Main(System.String[])">
+            <summary>
+            Application Initializer
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PayAjo.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Create Web host builder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PayAjo.Startup">
+            <summary>
+            Startup class
+            </summary>
+        </member>
+        <member name="P:PayAjo.Startup._config">
+            <summary>
+            Configuration 
+            </summary>
+        </member>
+        <member name="P:PayAjo.Startup._env">
+            <summary>
+            Environment setup ..
+            </summary>
+        </member>
+        <member name="M:PayAjo.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            Startup constructor .. 
+            </summary>
+            <param name="config"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:PayAjo.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+             This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PayAjo.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Configuration.IConfiguration,PayAjo.Data.PayAjoContext,PayAjo.Domain.Infrastucture.HangFire.IHangFireService)">
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        </member>
+    </members>
+</doc>

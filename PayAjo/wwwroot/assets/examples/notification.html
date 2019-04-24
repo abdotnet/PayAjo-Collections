@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Admin UI Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
+    />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts from fonts.google.com -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> -->
+
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard-pp.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-kit.css" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/demo/demo.css" rel="stylesheet" />
+    <!-- CSS Just for Customising purpose -->
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+
+
+    <!-- Related css to this page -->
+
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar sidebar-custom" data-color="#9a7f37">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+            <div class="logo">
+                <a href="#" class="simple-text logo-mini">
+                    <img src="../assets/img/eureka-logo.png" class="img-responsive" alt="Image">
+                </a>
+                <a href="#" class="simple-text logo-normal">
+                    Exolve
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav nav-custom">
+                    <li class="">
+                        <a href="../examples/dashboard.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#componentsExamples" aria-expanded="true">
+                            <i class="now-ui-icons education_atom"></i>
+                            <p>Components
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="componentsExamples">
+                            <ul class="nav">
+                                <li>
+                                    <a href="buttons.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">TYpography</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Buttons</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="slider.html">
+                                        <span class="sidebar-mini-icon">SP</span>
+                                        <span class="sidebar-normal">Slider & Progress Bar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="alert.html">
+                                        <span class="sidebar-mini-icon">A</span>
+                                        <span class="sidebar-normal">Alert</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="panel.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Panel</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#formsExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Forms
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="formsExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="form-element.html">
+                                        <span class="sidebar-mini-icon">FE</span>
+                                        <span class="sidebar-normal">Form Elements</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="form-Validations.html">
+                                        <span class="sidebar-mini-icon">FV</span>
+                                        <span class="sidebar-normal">Form Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="WizardValid.html">
+                                        <span class="sidebar-mini-icon">WV</span>
+                                        <span class="sidebar-normal">Wizard + Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="wysiwyg.html">
+                                        <span class="sidebar-mini-icon">W</span>
+                                        <span class="sidebar-normal">WYSIWYG Editor</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Form-plugin.html">
+                                        <span class="sidebar-mini-icon">FP</span>
+                                        <span class="sidebar-normal">Form Plugins</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="notification.html">
+                            <i class="now-ui-icons ui-1_bell-53"></i>
+                            <p>Notification</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Icons</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#tableExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_bullet-list-67"></i>
+                            <p>Tables
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="tableExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="simple-table.html">
+                                        <span class="sidebar-mini-icon">ST</span>
+                                        <span class="sidebar-normal">Simple Table</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="datatable.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Datatable</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#chartExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons business_chart-pie-36"></i>
+                            <p>Charts
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="chartExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="flow-chart.html">
+                                        <span class="sidebar-mini-icon">FC</span>
+                                        <span class="sidebar-normal">Flow Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="morris-chart.html">
+                                        <span class="sidebar-mini-icon">MC</span>
+                                        <span class="sidebar-normal">Morris Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="jquery-spark.html">
+                                        <span class="sidebar-mini-icon">JS</span>
+                                        <span class="sidebar-normal">JQuery Sparklines</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#galleryExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>Gallery
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="galleryExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="picture.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Picture</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="videos.html">
+                                        <span class="sidebar-mini-icon">V</span>
+                                        <span class="sidebar-normal">Video</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#file-uploadExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>File Uploader
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="file-uploadExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="dropzone.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Dropzone</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="multiple-file.html">
+                                        <span class="sidebar-mini-icon">MF</span>
+                                        <span class="sidebar-normal">Multiple File Uploader</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#mapExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons location_pin"></i>
+                            <p>Map
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="mapExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="google-map.html">
+                                        <span class="sidebar-mini-icon">GM</span>
+                                        <span class="sidebar-normal">Google Map</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="vector-map.html">
+                                        <span class="sidebar-mini-icon">VM</span>
+                                        <span class="sidebar-normal">Vector Map</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#pageExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Pages
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse show" id="pageExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="profile.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="timeline.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">Timeline</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mail.html">
+                                        <span class="sidebar-mini-icon">M</span>
+                                        <span class="sidebar-normal">Mail</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="invoice.html">
+                                        <span class="sidebar-mini-icon">I</span>
+                                        <span class="sidebar-normal">Invoice</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login-resgiter.html">
+                                        <span class="sidebar-mini-icon">LR</span>
+                                        <span class="sidebar-normal">Login & Register</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="search.html">
+                                        <span class="sidebar-mini-icon">S</span>
+                                        <span class="sidebar-normal">Search</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blank.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Blank</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-404.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 404</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-500.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 500</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- Sidebar -->
+
+
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <!-- BreadCrumb -->
+                        <ul class="breadcrumb breadcrumb-custom">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="notification.html" class="breadcrumb-active">Notification</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                </span>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="now-ui-icons media-2_sound-wave"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Stats</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons location_world"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Some Actions</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Notifications 1</a>
+                                    <a class="dropdown-item" href="#">Notifications 2</a>
+                                    <a class="dropdown-item" href="#">Notifications 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Account</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Messages
+                                        <span class="badge badge-gold">23</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">Sign out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-sm panel-header-custom">
+                <!-- <canvas id="bigDashboardChart"></canvas> -->
+            </div>
+            <div class="content content-custom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Notifications Style</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-info">
+                                    <span>This is a plain notification</span>
+                                </div>
+                                <div class="alert alert-info">
+                                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                    </button>
+                                    <span>This is a notification with close button.</span>
+                                </div>
+                                <div class="alert alert-info alert-with-icon" data-notify="container">
+                                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                    </button>
+                                    <span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>
+                                    <span data-notify="message">This is a notification with close button and icon.</span>
+                                </div>
+                                <div class="alert alert-info alert-with-icon" data-notify="container">
+                                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                    </button>
+                                    <span data-notify="icon" class="now-ui-icons ui-1_bell-53"></span>
+                                    <span data-notify="message">This is a notification with close button and icon and have many lines. You can see that the icon and the close button
+                                        are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Notifications State</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-primary">
+                                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                    </button>
+                                    <span>
+                                        <b> Primary - </b> This is a regular notification made with ".alert-primary"</span>
+                                </div>
+                            
+                                <div class="alert alert-info">
+                                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                    </button>
+                                    <span>
+                                        <b> Info - </b> This is a regular notification made with ".alert-info"</span>
+                                </div>
+                                <div class="alert alert-success">
+                                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                    </button>
+                                    <span>
+                                        <b> Success - </b> This is a regular notification made with ".alert-success"</span>
+                                </div>
+                                <div class="alert alert-warning">
+                                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                    </button>
+                                    <span>
+                                        <b> Warning - </b> This is a regular notification made with ".alert-warning"</span>
+                                </div>
+                                <div class="alert alert-danger">
+                                    <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close">
+                                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                                    </button>
+                                    <span>
+                                        <b> Danger - </b> This is a regular notification made with ".alert-danger"</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="title">Notifications Places</h5>
+                        <p>Click to View Notification</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8 ml-auto mr-auto">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','left')">Top Left</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','center')">Top Center</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-primary btn-block" onclick="demo.showNotification('top','right')">Top Right</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 ml-auto mr-auto">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','left')">Bottom Left</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','center')">Bottom Center</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="btn btn-primary btn-block" onclick="demo.showNotification('bottom','right')">Bottom Right</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="title">Modal</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                        
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    Classic modal
+                                </button>
+                                <button class="btn btn-info" data-toggle="modal" data-target="#noticeModal">
+                                    Notice modal
+                                </button>
+                                <button class="btn" data-toggle="modal" data-target="#myModal10">
+                                    Small alert modal
+                                </button>
+                        
+                                <!-- Classic Modal -->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header justify-content-center">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                </button>
+                                                <h4 class="title title-up">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                                                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a
+                                                    large language ocean. A small river named Duden flows by their place and supplies it with the
+                                                    necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly
+                                                    into your mouth.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default">Nice Button</button>
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  End Modal -->
+                        
+                                <!-- notice modal -->
+                                <div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog modal-notice">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                    <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                </button>
+                                                <h5 class="modal-title" id="myModalLabel">How Do You Become an Affiliate?</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="instruction">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <strong>1. Register</strong>
+                                                            <p class="description">The first step is to create an account at
+                                                                <a href="#">Exolve</a>. You can choose a social network or go for the classic version,
+                                                                whatever works best for you.</p>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="picture">
+                                                                <img src="../assets/img/bg1.jpg" alt="Thumbnail Image" class="rounded img-raised">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="instruction">
+                                                    <div class="row">
+                                                        <div class="col-md-8">
+                                                            <strong>2. Apply</strong>
+                                                            <p class="description">The first step is to create an account at
+                                                                <a href="#">Exolve</a>. You can choose a social network or go for the classic version,
+                                                                whatever works best for you.</p>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="picture">
+                                                                <img src="../assets/img/bg3.jpg" alt="Thumbnail Image" class="rounded img-raised">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>If you have more questions, don't hesitate to contact us or send us a tweet @creativetim. We're here
+                                                    to help!</p>
+                                            </div>
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="button" class="btn btn-info btn-round" data-dismiss="modal">Sounds good!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end notice modal -->
+                        
+                                <!-- small modal -->
+                                <div class="modal fade modal-mini modal-primary" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                                    aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header justify-content-center">
+                                                <div class="modal-profile">
+                                                    <i class="now-ui-icons users_circle-08"></i>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Always have an access to your profile</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-link btn-neutral">Back</button>
+                                                <button type="button" class="btn btn-link btn-neutral" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--    end small modal -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chart JS -->
+<script src="../assets/js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/now-ui-dashboard.js?v=1.0.1"></script>
+<script src="../assets/js/now-ui-kit.js"></script>
+<script src="../assets/js/custom.js"></script>
+<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/demo/demo.js"></script>
+
+<!-- Bootstrap Plugins -->
+<script type="text/javascript" src="../assets/plugins/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="../assets/plugins/bootstrap-switch.js"></script>
+<script type="text/javascript" src="../assets/plugins/jquery.sharrre.js"></script>
+<script type="text/javascript" src="../assets/plugins/nouislider.min.js"></script>
+
+
+
+
+<!-- Related JavaScript Library to This Pagee -->
+
+
+
+<script>
+
+</script>
+
+</html>

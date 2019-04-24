@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Admin UI Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
+    />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts from fonts.google.com -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> -->
+
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard-pp.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-kit.css" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/demo/demo.css" rel="stylesheet" />
+    <!-- CSS Just for Customising purpose -->
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+
+
+    <!-- Related css to this page -->
+    <link rel="stylesheet" href="../assets/vendors/jquery-steps/css/jquery.steps.css">
+    <link rel="stylesheet" href="../assets/vendors/fuelux/css/fuelux.wizard.min.css">
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar sidebar-custom" data-color="#9a7f37">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+            <div class="logo">
+                <a href="#" class="simple-text logo-mini">
+                    <img src="../assets/img/eureka-logo.png" class="img-responsive" alt="Image">
+                </a>
+                <a href="#" class="simple-text logo-normal">
+                    Exolve
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav nav-custom">
+                    <li class="">
+                        <a href="../examples/dashboard.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#componentsExamples" aria-expanded="true">
+                            <i class="now-ui-icons education_atom"></i>
+                            <p>Components
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="componentsExamples">
+                            <ul class="nav">
+                                <li>
+                                    <a href="buttons.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">TYpography</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Buttons</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="slider.html">
+                                        <span class="sidebar-mini-icon">SP</span>
+                                        <span class="sidebar-normal">Slider & Progress Bar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="alert.html">
+                                        <span class="sidebar-mini-icon">A</span>
+                                        <span class="sidebar-normal">Alert</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="panel.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Panel</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#formsExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Forms
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse show" id="formsExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="form-element.html">
+                                        <span class="sidebar-mini-icon">FE</span>
+                                        <span class="sidebar-normal">Form Elements</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="form-Validations.html">
+                                        <span class="sidebar-mini-icon">FV</span>
+                                        <span class="sidebar-normal">Form Validations</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="WizardValid.html">
+                                        <span class="sidebar-mini-icon">WV</span>
+                                        <span class="sidebar-normal">Wizard + Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="wysiwyg.html">
+                                        <span class="sidebar-mini-icon">W</span>
+                                        <span class="sidebar-normal">WYSIWYG Editor</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Form-plugin.html">
+                                        <span class="sidebar-mini-icon">FP</span>
+                                        <span class="sidebar-normal">Form Plugins</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="notification.html">
+                            <i class="now-ui-icons ui-1_bell-53"></i>
+                            <p>Notification</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Icons</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#tableExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_bullet-list-67"></i>
+                            <p>Tables
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="tableExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="simple-table.html">
+                                        <span class="sidebar-mini-icon">ST</span>
+                                        <span class="sidebar-normal">Simple Table</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="datatable.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Datatable</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#chartExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons business_chart-pie-36"></i>
+                            <p>Charts
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="chartExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="flow-chart.html">
+                                        <span class="sidebar-mini-icon">FC</span>
+                                        <span class="sidebar-normal">Flow Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="morris-chart.html">
+                                        <span class="sidebar-mini-icon">MC</span>
+                                        <span class="sidebar-normal">Morris Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="jquery-spark.html">
+                                        <span class="sidebar-mini-icon">JS</span>
+                                        <span class="sidebar-normal">JQuery Sparklines</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#galleryExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>Gallery
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="galleryExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="picture.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Picture</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="videos.html">
+                                        <span class="sidebar-mini-icon">V</span>
+                                        <span class="sidebar-normal">Video</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#file-uploadExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>File Uploader
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="file-uploadExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="dropzone.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Dropzone</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="multiple-file.html">
+                                        <span class="sidebar-mini-icon">MF</span>
+                                        <span class="sidebar-normal">Multiple File Uploader</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#mapExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons location_pin"></i>
+                            <p>Map
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="mapExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="google-map.html">
+                                        <span class="sidebar-mini-icon">GM</span>
+                                        <span class="sidebar-normal">Google Map</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="vector-map.html">
+                                        <span class="sidebar-mini-icon">VM</span>
+                                        <span class="sidebar-normal">Vector Map</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#pageExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Pages
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="pageExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="profile.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="timeline.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">Timeline</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mail.html">
+                                        <span class="sidebar-mini-icon">M</span>
+                                        <span class="sidebar-normal">Mail</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="invoice.html">
+                                        <span class="sidebar-mini-icon">I</span>
+                                        <span class="sidebar-normal">Invoice</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login-resgiter.html">
+                                        <span class="sidebar-mini-icon">LR</span>
+                                        <span class="sidebar-normal">Login & Register</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="search.html">
+                                        <span class="sidebar-mini-icon">S</span>
+                                        <span class="sidebar-normal">Search</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blank.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Blank</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-404.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 404</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-500.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 500</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- Sidebar -->
+
+
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <!-- BreadCrumb -->
+                        <ul class="breadcrumb breadcrumb-custom">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="wizardvalid.html" class="breadcrumb-active">Form Wizard</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                </span>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="now-ui-icons media-2_sound-wave"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Stats</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons location_world"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Some Actions</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Notifications 1</a>
+                                    <a class="dropdown-item" href="#">Notifications 2</a>
+                                    <a class="dropdown-item" href="#">Notifications 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Account</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Messages
+                                        <span class="badge badge-gold">23</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">Sign out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-sm panel-header-custom">
+                <!-- <canvas id="bigDashboardChart"></canvas> -->
+            </div>
+            <!-- Form Validation  -->
+            <div class="content content-custom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Steps Wizard</h5>
+                            </div>
+                            <div class="card-body">
+                                <form id="example-advanced-form" action="#">
+                                    <h3>Account</h3>
+                                    <fieldset>
+                                        <legend>Account Information</legend>
+                                
+                                
+                                        <div class="form-group">
+                                            <label class="control-label" for="userName-2">
+                                                User name *
+                                                <span class="symbol required"></span>
+                                            </label>
+                                            <input id="userName-2" name="userName" type="text" class="form-control required">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="password-2">
+                                                Password *
+                                                <span class="symbol required"></span>
+                                            </label>
+                                            <input id="password-2" name="password" type="password" class="form-control required">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="confirm-2">
+                                                Confirm Password *
+                                                <span class="symbol required"></span>
+                                            </label>
+                                            <input id="confirm-2" name="confirm" type="password" class="form-control required">
+                                        </div>
+                                
+                                        <p>(*) Mandatory</p>
+                                    </fieldset>
+                                
+                                    <h3>Profile</h3>
+                                    <fieldset>
+                                        <legend>Profile Information</legend>
+                                
+                                        <div class="form-group">
+                                            <label class="control-label" for="name-2">
+                                                First name *
+                                                <span class="symbol required"></span>
+                                            </label>
+                                            <input id="name-2" name="name" type="text" class="form-control required">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="surname-2">
+                                                Last name *
+                                                <span class="symbol required"></span>
+                                            </label>
+                                            <input id="surname-2" name="surname" type="text" class="form-control required">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="email-2">
+                                                Email *
+                                                <span class="symbol required"></span>
+                                            </label>
+                                            <input id="email-2" name="email" type="text" class="form-control email required">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="address-2">
+                                                Address
+                                                <span class="symbol required"></span>
+                                            </label>
+                                            <textarea id="address-2" name="address" class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="age-2">
+                                                Age (The warning step will show up if age is less than 18) *
+                                                <span class="symbol required"></span>
+                                            </label>
+                                            <input id="age-2" name="age" type="text" class="required number form-control">
+                                        </div>
+                                
+                                        <p>(*) Mandatory</p>
+                                    </fieldset>
+                                
+                                    <h3>Warning</h3>
+                                    <fieldset>
+                                        <legend>You are to young</legend>
+                                
+                                        <p>Please go away ;-)</p>
+                                    </fieldset>
+                                
+                                    <h3>Finish</h3>
+                                    <fieldset class="checkbox">
+                                        <input id="acceptTerms-2" name="acceptTerms" type="checkbox" class="required">
+                                        <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Fuelux Wizard</h5>
+                            </div>
+                            <div class="card-body">
+                                <section id="wizard" class="fuelux">
+                                    <div class="wizard" data-initialize="wizard" id="myWizard">
+                                        <div class="steps-container">
+                                            <ul class="steps">
+                                                <li data-step="1" data-name="campaign" class="active">
+                                                    <span class="badge">1</span>Step One
+                                                    <span class="chevron"></span>
+                                                </li>
+                                                <li data-step="2">
+                                                    <span class="badge">2</span>Step Two
+                                                    <span class="chevron"></span>
+                                                </li>
+                                                <li data-step="3" data-name="template">
+                                                    <span class="badge">3</span>Step Three
+                                                    <span class="chevron"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="actions">
+                                            <button type="button" class="btn btn-default btn-prev">
+                                                <span class="glyphicon glyphicon-arrow-left"></span>Prev</button>
+                                            <button type="button" class="btn btn-default btn-next" data-last="Complete">Next
+                                                <span class="glyphicon glyphicon-arrow-right"></span>
+                                            </button>
+                                        </div>
+                                        <div class="step-content">
+                                            <div class="step-pane active sample-pane alert" data-step="1">
+                                                <h4 class="danger">Step 1</h4>
+                                
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        First Name
+                                                        <span class="symbol required"></span>
+                                                    </label>
+                                                    <input type="text" placeholder="Insert your First Name" class="form-control" id="firstname" name="firstname">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        Last Name
+                                                        <span class="symbol required"></span>
+                                                    </label>
+                                                    <input type="text" placeholder="Insert your Last Name" class="form-control" id="lastname" name="lastname">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        Email Address
+                                                        <span class="symbol required"></span>
+                                                    </label>
+                                                    <input type="email" placeholder="Text Field" class="form-control" id="email" name="email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        Password
+                                                        <span class="symbol required"></span>
+                                                    </label>
+                                                    <input type="password" class="form-control" name="password" id="password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        Confirm Password
+                                                        <span class="symbol required"></span>
+                                                    </label>
+                                                    <input type="password" class="form-control" id="password_again" name="password_again">
+                                                </div>
+                                
+                                            </div>
+                                            <div class="step-pane sample-pane alert" data-step="2">
+                                                <h4>Step 2</h4>
+                                
+                                                <div class="form-group connected-group">
+                                                    <label class="control-label">
+                                                        Date of Birth
+                                                        <span class="symbol required"></span>
+                                                    </label>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <select name="dd" id="dd" class="form-control">
+                                                                <option value="">DD</option>
+                                                                <option value="01">1</option>
+                                                                <option value="02">2</option>
+                                                                <option value="03">3</option>
+                                                                <option value="04">4</option>
+                                                                <option value="05">5</option>
+                                                                <option value="06">6</option>
+                                                                <option value="07">7</option>
+                                                                <option value="08">8</option>
+                                                                <option value="09">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                                <option value="13">13</option>
+                                                                <option value="14">14</option>
+                                                                <option value="15">15</option>
+                                                                <option value="16">16</option>
+                                                                <option value="17">17</option>
+                                                                <option value="18">18</option>
+                                                                <option value="19">19</option>
+                                                                <option value="20">20</option>
+                                                                <option value="21">21</option>
+                                                                <option value="22">22</option>
+                                                                <option value="23">23</option>
+                                                                <option value="24">24</option>
+                                                                <option value="25">25</option>
+                                                                <option value="26">26</option>
+                                                                <option value="27">27</option>
+                                                                <option value="28">28</option>
+                                                                <option value="29">29</option>
+                                                                <option value="30">30</option>
+                                                                <option value="31">31</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <select name="mm" id="mm" class="form-control">
+                                                                <option value="">MM</option>
+                                                                <option value="01">1</option>
+                                                                <option value="02">2</option>
+                                                                <option value="03">3</option>
+                                                                <option value="04">4</option>
+                                                                <option value="05">5</option>
+                                                                <option value="06">6</option>
+                                                                <option value="07">7</option>
+                                                                <option value="08">8</option>
+                                                                <option value="09">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <input type="text" placeholder="YYYY" id="yyyy" name="yyyy" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        Gender
+                                                        <span class="symbol required"></span>
+                                                    </label>
+                                                    <div>
+                                
+                                                        <div class="radio radio-primary radio-inline">
+                                                            <input type="radio" value="" name="gender" id="gender_female">
+                                                            <label for="gender_female">Female</label>
+                                                        </div>
+                                                        <div class="radio radio-primary radio-inline">
+                                                            <input type="radio" value="" name="gender" id="gender_male">
+                                                            <label for="gender_male">male</label>
+                                                        </div>
+                                
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label class="control-label">
+                                                                Zip Code
+                                                                <span class="symbol required"></span>
+                                                            </label>
+                                                            <input class="form-control" type="text" name="zipcode" id="zipcode">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="form-group">
+                                                            <label class="control-label">
+                                                                City
+                                                                <span class="symbol required"></span>
+                                                            </label>
+                                                            <input class="form-control tooltips" type="text" data-original-title="We'll display it when you write reviews" data-rel="tooltip"
+                                                                title="" data-placement="top" name="city" id="city">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <hr>
+                                                    <label class="control-label">
+                                                        <strong>Signup for Clip-One Emails</strong>
+                                                        <span class="symbol required"></span>
+                                                    </label>
+                                                    <p>
+                                                        Would you like to review Clip-One emails?
+                                                    </p>
+                                                    <div>
+                                                        <div class="radio radio-primary radio-inline">
+                                                            <input type="radio" value="" name="newsletter" id="no">
+                                                            <label for="no">Female</label>
+                                                        </div>
+                                                        <div class="radio radio-primary radio-inline">
+                                                            <input type="radio" value="" name="newsletter" id="yes">
+                                                            <label for="yes">male</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                
+                                            </div>
+                                            <div class="step-pane sample-pane bg-danger alert" data-step="3">
+                                                <h4>Congratulations</h4>
+                                                <p> Your information post successfly </p>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Exolve
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>, Designed by
+                        <a href="#" target="_blank">Exolve</a>. Coded by
+                        <a href="#" target="_blank">Exolve</a>.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chart JS -->
+<script src="../assets/js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/now-ui-dashboard.js?v=1.0.1"></script>
+<script src="../assets/js/now-ui-kit.js"></script>
+<script src="../assets/js/custom.js"></script>
+<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/demo/demo.js"></script>
+
+<!-- Related JavaScript Library to This Pagee -->
+<script type="text/javascript" src="../assets/vendors/jquery-validation/js/jquery.validate.min.js"></script>
+
+<!-- Bootstrap Plugins -->
+<script type="text/javascript" src="../assets/plugins/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="../assets/plugins/bootstrap-switch.js"></script>
+<script type="text/javascript" src="../assets/plugins/jquery.sharrre.js"></script>
+<script type="text/javascript" src="../assets/plugins/nouislider.min.js"></script>
+
+<!-- Related JavaScript Library to This Pagee -->
+<script type="text/javascript" src="../assets/vendors/jquery-steps/js/jquery.steps.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/jquery-validation/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/fuelux/js/fuelux.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/fuelux/js/wizard.min.js"></script>
+
+<!-- Plugins Script -->
+<script type="text/javascript">
+
+    /* jQuery Steps Wizard*/
+    var form = $("#example-advanced-form").show();
+    form.steps({
+        headerTag: "h3",
+        bodyTag: "fieldset",
+        transitionEffect: "slideLeft",
+        onStepChanging: function (event, currentIndex, newIndex) {
+            // Allways allow previous action even if the current form is not valid!
+            if (currentIndex > newIndex) {
+                return true;
+            }
+            // Forbid next action on "Warning" step if the user is to young
+            if (newIndex === 3 && Number($("#age-2").val()) < 18) {
+                return false;
+            }
+            // Needed in some cases if the user went back (clean up)
+            if (currentIndex < newIndex) {
+                // To remove error styles
+                form.find(".body:eq(" + newIndex + ") label.error").remove();
+                form.find(".body:eq(" + newIndex + ") .error").removeClass("error");
+            }
+            form.validate().settings.ignore = ":disabled,:hidden";
+            return form.valid();
+        },
+        onStepChanged: function (event, currentIndex, priorIndex) {
+            // Used to skip the "Warning" step if the user is old enough.
+            if (currentIndex === 2 && Number($("#age-2").val()) >= 18) {
+                form.steps("next");
+            }
+            // Used to skip the "Warning" step if the user is old enough and wants to the previous step.
+            if (currentIndex === 2 && priorIndex === 3) {
+                form.steps("previous");
+            }
+        },
+        onFinishing: function (event, currentIndex) {
+            form.validate().settings.ignore = ":disabled";
+            return form.valid();
+        },
+        onFinished: function (event, currentIndex) {
+            alert("Submitted!");
+        }
+    }).validate({
+        errorPlacement: function errorPlacement(error, element) { element.after(error); },
+        rules: {
+            confirm: {
+                equalTo: "#password-2"
+            }
+        }
+    });
+
+    /* vertical menu wizard */
+    $("#example-vertical").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+        stepsOrientation: "vertical"
+    });
+
+
+    /* Setup Fuelux wizard */
+    $('#myWizard').wizard();
+
+
+</script>
+</html>

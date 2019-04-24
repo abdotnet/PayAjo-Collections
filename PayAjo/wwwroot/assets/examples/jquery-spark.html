@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Admin UI Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
+    />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts from fonts.google.com -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> -->
+
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.glyph.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard-pp.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-kit.css" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/demo/demo.css" rel="stylesheet" />
+    <!-- CSS Just for Customising purpose -->
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+
+    <!-- Related css to this page -->
+
+
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar sidebar-custom" data-color="#9a7f37">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+            <div class="logo">
+                <a href="#" class="simple-text logo-mini">
+                    <img src="../assets/img/eureka-logo.png" class="img-responsive" alt="Image">
+                </a>
+                <a href="#" class="simple-text logo-normal">
+                    Exolve
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav nav-custom">
+                    <li class="">
+                        <a href="../examples/dashboard.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#componentsExamples" aria-expanded="true">
+                            <i class="now-ui-icons education_atom"></i>
+                            <p>Components
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="componentsExamples">
+                            <ul class="nav">
+                                <li>
+                                    <a href="buttons.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">TYpography</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Buttons</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="slider.html">
+                                        <span class="sidebar-mini-icon">SP</span>
+                                        <span class="sidebar-normal">Slider & Progress Bar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="alert.html">
+                                        <span class="sidebar-mini-icon">A</span>
+                                        <span class="sidebar-normal">Alert</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="panel.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Panel</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#formsExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Forms
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="formsExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="form-element.html">
+                                        <span class="sidebar-mini-icon">FE</span>
+                                        <span class="sidebar-normal">Form Elements</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="form-Validations.html">
+                                        <span class="sidebar-mini-icon">FV</span>
+                                        <span class="sidebar-normal">Form Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="WizardValid.html">
+                                        <span class="sidebar-mini-icon">WV</span>
+                                        <span class="sidebar-normal">Wizard + Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="wysiwyg.html">
+                                        <span class="sidebar-mini-icon">W</span>
+                                        <span class="sidebar-normal">WYSIWYG Editor</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Form-plugin.html">
+                                        <span class="sidebar-mini-icon">FP</span>
+                                        <span class="sidebar-normal">Form Plugins</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="notification.html">
+                            <i class="now-ui-icons ui-1_bell-53"></i>
+                            <p>Notification</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Icons</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#tableExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_bullet-list-67"></i>
+                            <p>Tables
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="tableExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="simple-table.html">
+                                        <span class="sidebar-mini-icon">ST</span>
+                                        <span class="sidebar-normal">Simple Table</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="datatable.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Datatable</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#chartExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons business_chart-pie-36"></i>
+                            <p>Charts
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse show" id="chartExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="flow-chart.html">
+                                        <span class="sidebar-mini-icon">FC</span>
+                                        <span class="sidebar-normal">Flow Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="morris-chart.html">
+                                        <span class="sidebar-mini-icon">MC</span>
+                                        <span class="sidebar-normal">Morris Chart</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="jquery-spark.html">
+                                        <span class="sidebar-mini-icon">JS</span>
+                                        <span class="sidebar-normal">JQuery Sparklines</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#galleryExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>Gallery
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="galleryExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="picture.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Picture</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="videos.html">
+                                        <span class="sidebar-mini-icon">V</span>
+                                        <span class="sidebar-normal">Video</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#file-uploadExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>File Uploader
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="file-uploadExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="dropzone.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Dropzone</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="multiple-file.html">
+                                        <span class="sidebar-mini-icon">MF</span>
+                                        <span class="sidebar-normal">Multiple File Uploader</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#mapExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons location_pin"></i>
+                            <p>Map
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="mapExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="google-map.html">
+                                        <span class="sidebar-mini-icon">GM</span>
+                                        <span class="sidebar-normal">Google Map</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="vector-map.html">
+                                        <span class="sidebar-mini-icon">VM</span>
+                                        <span class="sidebar-normal">Vector Map</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#pageExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Pages
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="pageExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="profile.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="timeline.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">Timeline</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mail.html">
+                                        <span class="sidebar-mini-icon">M</span>
+                                        <span class="sidebar-normal">Mail</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="invoice.html">
+                                        <span class="sidebar-mini-icon">I</span>
+                                        <span class="sidebar-normal">Invoice</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login-resgiter.html">
+                                        <span class="sidebar-mini-icon">LR</span>
+                                        <span class="sidebar-normal">Login & Register</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="search.html">
+                                        <span class="sidebar-mini-icon">S</span>
+                                        <span class="sidebar-normal">Search</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blank.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Blank</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-404.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 404</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-500.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 500</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- Sidebar -->
+
+
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <!-- BreadCrumb -->
+                        <ul class="breadcrumb breadcrumb-custom">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="jquery-spark.html" class="breadcrumb-active">JQuery Spark</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                </span>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="now-ui-icons media-2_sound-wave"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Stats</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons location_world"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Some Actions</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Notifications 1</a>
+                                    <a class="dropdown-item" href="#">Notifications 2</a>
+                                    <a class="dropdown-item" href="#">Notifications 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Account</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Messages
+                                        <span class="badge badge-gold">23</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">Sign out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-sm panel-header-custom">
+                <!-- <canvas id="bigDashboardChart"></canvas> -->
+            </div>
+            <!-- Chart -->
+            <div class="content content-custom">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="well well-sm well-light well-grey">
+                                    <h4 class="chart-title">Pie
+                                        <strong>Chart</strong>
+                                        <a href="javascript:void(0);" class="pull-right ">
+                                            <i class="now-ui-icons arrows-1_refresh-69"></i>
+                                        </a>
+                                    </h4>
+                                    <br>
+                                    <div class="text-center">
+                                        <div id="pie1" class="sparkline txt-color-blue display-inline">40,60,70</div>
+                                        <div id="pie2" class="sparkline txt-color-blue display-inline">20,30,40</div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="well well-sm well-light well-grey padding-10">
+                                    <h4 class="chart-title">
+                                        Composite
+                                        <strong>Chart</strong>
+                                        <a href="javascript:void(0);" class="pull-right ">
+                                            <i class="now-ui-icons arrows-1_refresh-69"></i>
+                                        </a>
+                                    </h4>
+                                    <br>
+                                    <span id="compositeline-big">4,1,5,7,9,9,8,7,6,6,4,7,8,4,3,2,2,5,6,7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="well well-sm well-light well-grey">
+                                    <h4 class="chart-title">Bar
+                                        <strong>Chart</strong>
+                                        <a href="javascript:void(0);" class="pull-right ">
+                                            <i class="now-ui-icons arrows-1_refresh-69"></i>
+                                        </a>
+                                    </h4>
+                                    <br>
+                                    <div id="bar-big" class="sparkline txt-color-blueLight text-center">6,5,6,8,3,5,6,4,9,6,7,2,5,4,9,3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="well well-sm well-light well-grey">
+                                    <h4 class="chart-title">Bar
+                                        <strong>Stacked Chart</strong>
+                                        <a href="javascript:void(0);" class="pull-right">
+                                            <i class="now-ui-icons arrows-1_refresh-69"></i>
+                                        </a>
+                                    </h4>
+                                    <br>
+                                    <div id="stacked-bar-big" class="sparkline txt-color-blue text-center"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>
+                                
+                                        Realtime chart generate by mouse speed
+                                        <span id="mousespeed"></span>
+                                        <p class="note">
+                                            update display every 500ms. Please move your mouse to see change.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        Inline
+                                        <span id="inline">5,6,7,9,9,5,3,2,2,4,6,7</span>
+                                        & line graphs
+                                        <span id="inline-graphs">5,6,7,9,9,5,3,2,2,4,6,7</span>
+                                        & Inline with normal range
+                                        <span id="normalline">1,9,8,7,6,6,4,7,8,4,10,9,4</span>
+                                        <p class="note">
+                                            $("#inline").sparkline('html', { type: 'line', width: '40px' });
+                                            <br> $("#inline-graphs").sparkline('html', { type: 'line', width: '100px' });
+                                            <br> $('#normalline').sparkline('html', { fillColor: false, normalRangeMin: -1, normalRangeMax: 6 });
+                                        </p>
+                                
+                                    </li>
+                                    <li>
+                                        Bar charts
+                                        <span id="bar">5,15,7,2,4,10,12,5,4</span>
+                                        and negative values
+                                        <span id="negative-bar">5,15,7,2,0,-10,-5,4,10,12,5,4,6</span>
+                                        and stacked
+                                        <span id="stacked-bar"></span>
+                                        <p class="note">
+                                            $("#bar").sparkline('html', { type: 'bar', barWidth: 6 });
+                                            <br> $("#negative-bar").sparkline('html', { type: 'bar', barWidth: 6 });
+                                            <br> $("#stacked-bar").sparkline('[ [1,4], [2, 6], [3, 2], [4, 1] ,[5,3],[3,8] ]', { type: 'bar' });
+                                        </p>
+                                    </li>
+                                    <li>
+                                        Tristate charts
+                                        <span id="sparktristate">1,1,0,1,-1,-1,1,-1,0,0,1,1</span>
+                                        (think games won, lost or drawn)
+                                        <p class="note">
+                                            $("#sparktristate").sparkline('html', { type: 'tristate', posBarColor: '#428400', negBarColor: '#005fbf' });
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>
+                                        Composite inline
+                                        <span id="compositeline">1,2,3,4,5,4,3,2,1,5,6,9,4,3,5,1,2</span>
+                                        & Composite bar
+                                        <span id="compositebar">4,1,5,7,9,9,8,7,6,6,4,7,8,4,3,2,2,5,6,7</span>
+                                        <p class="note">
+                                            $('#compositeline').sparkline('html', { fillColor: false, changeRangeMin: 0, chartRangeMax: 10 });
+                                            <br> $('#compositeline').sparkline([4,1,5,7,9,9,8,7,6,6,4,7,8,4,3,2,2,5,6,7], { composite: true, fillColor: false,
+                                            lineColor: 'red', changeRangeMin: 0, chartRangeMax: 10 });
+                                            <br>
+                                            <br> $('#compositebar').sparkline('html', { type: 'bar', barColor: '#aaf' });
+                                            <br> $('#compositebar').sparkline([4,1,5,7,9,9,8,7,6,6,4,7,8,4,3,2,2,5,6,7], { composite: true, fillColor: false,
+                                            lineColor: 'red' });
+                                        </p>
+                                    </li>
+                                    <li>
+                                        Discrete
+                                        <span id="discrete3">1,2,3,2,1,5,6,7,8,9,8,6,4,3,2,5</span>
+                                        and Discrete with threshold
+                                        <span id="discrete2">4,6,7,7,4,3,2,-1,-6,-8,-6,9,4,5,2,6,4,5</span>
+                                        <p class="note">
+                                            $("#discrete3").sparkline('html', { type: 'discrete', thresholdColor: '#ff0000' });
+                                            <br> $("#discrete2").sparkline('html', { type: 'discrete', thresholdValue: 0, thresholdColor: '#ff0000' });
+                                        </p>
+                                    </li>
+                                    <li>
+                                        Box Plot
+                                        <span id="sparkboxplot">4,27,34,52,54,59,61,68,78,82,85,87,91,93,100</span>
+                                        & Pie charts
+                                        <span id="sparkpie">20,30,50,60</span>
+                                        & Bullet charts
+                                        <span id="sparkbullet">10,12,12,9,7</span>
+                                        <p class="note">
+                                            $("#sparkboxplot").sparkline('html', { type: 'box' });
+                                            <br> $("#sparkpie").sparkline('html', { type: 'pie' });
+                                            <br> $("#sparkbullet").sparkline('html', { type: 'bullet' });
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Exolve
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>, Designed by
+                        <a href="#" target="_blank">Exolve</a>. Coded by
+                        <a href="#" target="_blank">Exolve</a>.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+
+<!--  Google Maps Plugin    -->
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+
+
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/now-ui-dashboard.js?v=1.0.1"></script>
+<script src="../assets/js/now-ui-kit.js"></script>
+<script src="../assets/js/custom.js"></script>
+<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/demo/demo.js"></script>
+
+
+<!-- Bootstrap Plugins -->
+<script type="text/javascript" src="../assets/plugins/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="../assets/plugins/bootstrap-switch.js"></script>
+<script type="text/javascript" src="../assets/plugins/jquery.sharrre.js"></script>
+<script type="text/javascript" src="../assets/plugins/nouislider.min.js"></script>
+
+
+<!-- Chart JS -->
+<!-- <script src="../assets/js/plugins/chartjs.min.js"></script> -->
+
+<!-- Related JavaScript Library to This Pagee -->
+<script type="text/javascript" src="../assets/vendors/jquery-sparkline/js/jquery.sparkline.min.js"></script>
+
+		<!-- Plugins Script -->
+		<script type="text/javascript">
+			$(function(){
+				$("#inline").sparkline('html', {
+				    type: 'line',
+				    width: '40px'
+				});
+				$("#inline-graphs").sparkline('html', {
+				    type: 'line',
+				    width: '100px'
+				});
+				$("#bar").sparkline('html', {
+				    type: 'bar',
+				    barWidth: 6
+				});
+				$("#negative-bar").sparkline('html', {
+				    type: 'bar',
+				    barWidth: 6
+				});
+				$("#stacked-bar").sparkline([ [1,4], [2, 6], [3, 2], [4, 1] ,[5,3],[3,8] ], {
+				    type: 'bar' 
+				});
+
+				$("#bar2").sparkline([ [1,4], [2, 6], [3, 2], [4, 1] ,[5,3],[3,8] ], {
+				    type: 'bar' 
+				});
+
+				$('#normalline').sparkline('html', {
+				     fillColor: false, 
+				     normalRangeMin: -1, 
+				     normalRangeMax: 6 
+				});
+
+				$('#compositeline').sparkline('html', { 
+				    fillColor: false, 
+				    changeRangeMin: 0, 
+				    chartRangeMax: 10 
+				});
+				$('#compositeline').sparkline([4,1,5,7,9,9,8,7,6,6,4,7,8,4,3,2,2,5,6,7],  {
+				    composite: true, 
+				    fillColor: false, 
+				    lineColor: 'red', 
+				    changeRangeMin: 0, 
+				    chartRangeMax: 10 
+				});
+
+				$('#compositebar').sparkline('html', { 
+				    type: 'bar', 
+				    barColor: '#aaf' 
+				});
+				$('#compositebar').sparkline([4,1,5,7,9,9,8,7,6,6,4,7,8,4,3,2,2,5,6,7], {
+				    composite: true, 
+				    fillColor: false, 
+				    lineColor: 'red' 
+				});
+
+
+				$("#discrete3").sparkline('html', {
+				    type: 'discrete',
+				    thresholdColor: '#ff0000'
+				});
+
+				$("#discrete2").sparkline('html', {
+				    type: 'discrete',
+				    thresholdValue: 0,
+				    thresholdColor: '#ff0000'
+				});
+
+				$("#sparktristate").sparkline('html', {
+				    type: 'tristate',
+				    posBarColor: '#428400',
+				    negBarColor: '#005fbf'
+				});
+				$("#sparkboxplot").sparkline('html', {
+				    type: 'box'
+				});
+				$("#sparkpie").sparkline('html', {
+				    type: 'pie'
+				});
+				$("#sparkbullet").sparkline('html', {
+				    type: 'bullet'
+				});
+
+				$("#pie1").sparkline('html', {
+				    type: 'pie',
+				    width: '45%',
+				    height:'78px'
+				});
+				$("#pie2").sparkline('html', {
+				    type: 'pie',
+				    width: '45%',
+				    height:'78px'
+				});
+
+				$('#compositeline-big').sparkline('html', { 
+				    fillColor: false, 
+				    changeRangeMin: 0, 
+				    chartRangeMax: 10 ,
+				     width: '100%',
+				    height:'78px',
+				    spotRadius:'5',
+				    lineWidth:'3',
+				    borderWidth:'4',
+				    lineColor:'#2b5c59',
+
+
+				});
+				$('#compositeline-big').sparkline([6,4,7,8,4,3,2,2,5,6,7,4,1,5,7,9,9,8,7,6],  {
+				    composite: true, 
+				    fillColor: false, 
+				    lineColor: 'red', 
+				    changeRangeMin: 0, 
+				    chartRangeMax: 10 ,
+				    spotRadius:'5',
+				    lineColor:'#3a6965'
+				    
+				});
+
+				$("#bar-big").sparkline('html', {
+				    type: 'bar',
+				    barWidth: 11,
+				    width:'100%',
+				    height:'78px',
+				    barSpacing:5,
+				    BarColor:'#3a6965',
+				    lineColor:'#ffffff'
+
+				});
+
+				$("#stacked-bar-big").sparkline([ [1,4], [2, 6], [3, 2], [4, 1] ,[5,3],[3,8] ,[2, 6], [3, 2], [4, 1],[4, 1] ,[5,3],[3,8] ,[2, 6]], {
+				    type: 'bar' ,
+				    barWidth: 11,
+				    width:'100%',
+				    height:'78px',
+				    barSpacing:5,
+
+				});
+
+				// Demo Mouse speed sparkline chart
+				var mrefreshinterval = 500; // update display every 500ms
+				var lastmousex=-1; 
+				var lastmousey=-1;
+				var lastmousetime;
+				var mousetravel = 0;
+				var mpoints = [];
+				var mpoints_max = 30;
+				$('html').mousemove(function(e) {
+				    var mousex = e.pageX;
+				    var mousey = e.pageY;
+				    if (lastmousex > -1) {
+				        mousetravel += Math.max( Math.abs(mousex-lastmousex), Math.abs(mousey-lastmousey) );
+				    }
+				    lastmousex = mousex;
+				    lastmousey = mousey;
+				});
+				var mdraw = function() {
+				    var md = new Date();
+				    var timenow = md.getTime();
+				    if (lastmousetime && lastmousetime!=timenow) {
+				        var pps = Math.round(mousetravel / (timenow - lastmousetime) * 1000);
+				        mpoints.push(pps);
+				        if (mpoints.length > mpoints_max)
+				            mpoints.splice(0,1);
+				        mousetravel = 0;
+				        $('#mousespeed').sparkline(mpoints, { width: mpoints.length*2, tooltipSuffix: ' pixels per second' });
+				    }
+				    lastmousetime = timenow;
+				    setTimeout(mdraw, mrefreshinterval);
+				}
+				// We could use setInterval instead, but I prefer to do it this way
+				setTimeout(mdraw, mrefreshinterval); 
+
+			});
+			
+		</script>
+
+
+
+</html>

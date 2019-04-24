@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Admin UI Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
+    />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+
+    <!-- Custom Fonts from fonts.google.com -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> -->
+
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap.glyph.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+    <link href="../assets/css/now-ui-dashboard-pp.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-kit.css" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/demo/demo.css" rel="stylesheet" />
+    <!-- CSS Just for Customising purpose -->
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+
+
+    <!-- Related css to this page -->
+    <link rel="stylesheet" href="../assets/vendors/summernote/css/summernote.css">
+    <link rel="stylesheet" href="../assets/vendors/jasny-bootstrap/css/jasny-bootstrap.min.css">
+
+</head>
+
+<body class="">
+    <div class="wrapper ">
+        <div class="sidebar sidebar-custom" data-color="#9a7f37">
+            <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+            <div class="logo">
+                <a href="#" class="simple-text logo-mini">
+                    <img src="../assets/img/eureka-logo.png" class="img-responsive" alt="Image">
+                </a>
+                <a href="#" class="simple-text logo-normal">
+                    Exolve
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav nav-custom">
+                    <li class="">
+                        <a href="../examples/dashboard.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#componentsExamples" aria-expanded="true">
+                            <i class="now-ui-icons education_atom"></i>
+                            <p>Components
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="componentsExamples">
+                            <ul class="nav">
+                                <li>
+                                    <a href="buttons.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">TYpography</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Buttons</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="slider.html">
+                                        <span class="sidebar-mini-icon">SP</span>
+                                        <span class="sidebar-normal">Slider & Progress Bar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="alert.html">
+                                        <span class="sidebar-mini-icon">A</span>
+                                        <span class="sidebar-normal">Alert</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="panel.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Panel</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#formsExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Forms
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="formsExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="form-element.html">
+                                        <span class="sidebar-mini-icon">FE</span>
+                                        <span class="sidebar-normal">Form Elements</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="form-Validations.html">
+                                        <span class="sidebar-mini-icon">FV</span>
+                                        <span class="sidebar-normal">Form Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="WizardValid.html">
+                                        <span class="sidebar-mini-icon">WV</span>
+                                        <span class="sidebar-normal">Wizard + Validations</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="wysiwyg.html">
+                                        <span class="sidebar-mini-icon">W</span>
+                                        <span class="sidebar-normal">WYSIWYG Editor</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Form-plugin.html">
+                                        <span class="sidebar-mini-icon">FP</span>
+                                        <span class="sidebar-normal">Form Plugins</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="notification.html">
+                            <i class="now-ui-icons ui-1_bell-53"></i>
+                            <p>Notification</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons.html">
+                            <i class="now-ui-icons design_app"></i>
+                            <p>Icons</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#tableExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_bullet-list-67"></i>
+                            <p>Tables
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="tableExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="simple-table.html">
+                                        <span class="sidebar-mini-icon">ST</span>
+                                        <span class="sidebar-normal">Simple Table</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="datatable.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Datatable</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#chartExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons business_chart-pie-36"></i>
+                            <p>Charts
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="chartExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="flow-chart.html">
+                                        <span class="sidebar-mini-icon">FC</span>
+                                        <span class="sidebar-normal">Flow Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="morris-chart.html">
+                                        <span class="sidebar-mini-icon">MC</span>
+                                        <span class="sidebar-normal">Morris Chart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="jquery-spark.html">
+                                        <span class="sidebar-mini-icon">JS</span>
+                                        <span class="sidebar-normal">JQuery Sparklines</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#galleryExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>Gallery
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="galleryExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="picture.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Picture</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="videos.html">
+                                        <span class="sidebar-mini-icon">V</span>
+                                        <span class="sidebar-normal">Video</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#file-uploadExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons design_image"></i>
+                            <p>File Uploader
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="file-uploadExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="dropzone.html">
+                                        <span class="sidebar-mini-icon">D</span>
+                                        <span class="sidebar-normal">Dropzone</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="multiple-file.html">
+                                        <span class="sidebar-mini-icon">MF</span>
+                                        <span class="sidebar-normal">Multiple File Uploader</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#mapExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons location_pin"></i>
+                            <p>Map
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse" id="mapExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="google-map.html">
+                                        <span class="sidebar-mini-icon">GM</span>
+                                        <span class="sidebar-normal">Google Map</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="vector-map.html">
+                                        <span class="sidebar-mini-icon">VM</span>
+                                        <span class="sidebar-normal">Vector Map</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="collapse" href="#pageExamples" class="collapsed" aria-expanded="false">
+                            <i class="now-ui-icons files_single-copy-04"></i>
+                            <p>Pages
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+
+                        <div class="collapse show" id="pageExamples" style="">
+                            <ul class="nav">
+                                <li>
+                                    <a href="profile.html">
+                                        <span class="sidebar-mini-icon">P</span>
+                                        <span class="sidebar-normal">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="timeline.html">
+                                        <span class="sidebar-mini-icon">T</span>
+                                        <span class="sidebar-normal">Timeline</span>
+                                    </a>
+                                </li>
+                                <li  class="active">
+                                    <a href="mail.html">
+                                        <span class="sidebar-mini-icon">M</span>
+                                        <span class="sidebar-normal">Mail</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="invoice.html">
+                                        <span class="sidebar-mini-icon">I</span>
+                                        <span class="sidebar-normal">Invoice</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login-resgiter.html">
+                                        <span class="sidebar-mini-icon">LR</span>
+                                        <span class="sidebar-normal">Login & Register</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="search.html">
+                                        <span class="sidebar-mini-icon">S</span>
+                                        <span class="sidebar-normal">Search</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blank.html">
+                                        <span class="sidebar-mini-icon">B</span>
+                                        <span class="sidebar-normal">Blank</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-404.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 404</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="error-500.html">
+                                        <span class="sidebar-mini-icon">E</span>
+                                        <span class="sidebar-normal">Error 500</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- Sidebar -->
+
+
+        <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <!-- BreadCrumb -->
+                        <ul class="breadcrumb breadcrumb-custom">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="mail.html" class="breadcrumb-active">Mail</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <form>
+                            <div class="input-group no-border">
+                                <input type="text" value="" class="form-control" placeholder="Search...">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                </span>
+                            </div>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <i class="now-ui-icons media-2_sound-wave"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Stats</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons location_world"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Some Actions</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Notifications 1</a>
+                                    <a class="dropdown-item" href="#">Notifications 2</a>
+                                    <a class="dropdown-item" href="#">Notifications 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                    <p>
+                                        <span class="d-lg-none d-md-block">Account</span>
+                                    </p>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Messages
+                                        <span class="badge badge-gold">23</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">Sign out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-sm panel-header-custom">
+                <!-- <canvas id="bigDashboardChart"></canvas> -->
+            </div>
+            <div class="content content-custom">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="panel panel-default">
+                            <div class="panel-body no-padding email-panel">
+                                <!-- Mail Sidebar -->
+                                <div class="email-sidebar col-md-3">
+                                    <div class="logo-container">
+                                        <span class="logo glyphicon glyphicon-envelope"></span>Mail</div>
+                                    <a class="compose-btn btn btn-block btn-default">Compose</a>
+                                    <div class="menu-segment">
+                                        <ul>
+                                            <li class="active">
+                                                <a id="inbox" href="#">Inbox
+                                                    <span> (43)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Important</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Sent</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Drafts</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Trash</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="separator"></div>
+                                    <div class="menu-segment">
+                                        <ul class="labels">
+                                            <li class="title">Labels
+                                                <span class="icon">+</span>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dribbble
+                                                    <span class="ball pink"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Roommates
+                                                    <span class="ball green"></span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Bills
+                                                    <span class="ball blue"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- /end Mail Sidebar -->
+                        
+                                <!-- Mail list grid -->
+                                <div class="email-list col-md-9">
+                                    <header class="header">
+                                        <div class="search-box">
+                                            <input type="text" class="form-control" placeholder="Search...">
+                                            <span class="icon glyphicon glyphicon-search"></span>
+                                        </div>
+                                        <h4 class="page-title"><b>
+                                            <a class="sidebar-toggle-btn trigger-toggle-sidebar">
+                                                <span class="line"></span>
+                                                <span class="line"></span>
+                                                <span class="line"></span>
+                                                <span class="line line-angle1"></span>
+                                                <span class="line line-angle2"></span>
+                                            </a>Inbox</b></h4>
+                                    </header>
+                                    <div class="action-bar">
+                                        <ul>
+                                            <li>
+                                                <a class="icon square-icon glyphicon glyphicon-chevron-down"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon square-icon glyphicon glyphicon-refresh"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon square-icon glyphicon glyphicon-share-alt"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon square-icon red glyphicon glyphicon-remove"></a>
+                                            </li>
+                                            <li>
+                                                <a class="icon square-icon red glyphicon glyphicon-flag"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="content">
+                                        <!-- responsive table -->
+                                        <div class="res-table">
+                                            <table class="table table-hover table-fixed ellipsis-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="center width-5">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox10" type="checkbox">
+                                                                <label for="checkbox10">
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <th class="width-20">Sender</th>
+                                                        <th class="width-60">Subject</th>
+                                                        <th class="width-5"></th>
+                                                        <th class="width-10">Date</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="unread">
+                                                        <th class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox20" type="checkbox">
+                                                                <label for="checkbox20">
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td data-title="Sender">Lucas Kriebel (via Twitter)</td>
+                                                        <td data-title="Subject">Lucas Kriebel (@LucasKriebel) has sent you a direct message on Twitter!</td>
+                                                        <td data-title="Attach">
+                                                            <i class="fa fa-paperclip fa-lg"></i>
+                                                        </td>
+                                                        <td data-title="Date">11:49 AM</td>
+                                                    </tr>
+                                                    <tr class="unread">
+                                                        <td class="center">
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="checkbox30" type="checkbox">
+                                                                <label for="checkbox30">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td data-title="Sender">Randy, me (5)</td>
+                                                        <td data-title="Subject">Last pic over my village – </td>
+                                                        <td data-title="Attach">
+                                                            <i class="fa fa-paperclip fa-lg"></i>
+                                                        </td>
+                                                        <td data-title="Date">5:03 AM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox19" type="checkbox">
+                                                                <label for="checkbox19">
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td data-title="Sender">Lucas Kriebel (via Twitter)</td>
+                                                        <td data-title="Subject">Lucas Kriebel (@LucasKriebel) has sent you a direct message on Twitter!</td>
+                                                        <td data-title="Attach"></td>
+                                                        <td data-title="Date">11:49 AM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox21" type="checkbox">
+                                                                <label for="checkbox21">
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td data-title="Sender">Lucas Kriebel (via Twitter)</td>
+                                                        <td data-title="Subject">Lucas Kriebel (@LucasKriebel) has sent you a direct message on Twitter!</td>
+                                                        <td data-title="Attach"></td>
+                                                        <td data-title="Date">11:49 AM</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox60" type="checkbox">
+                                                                <label for="checkbox60">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td data-title="Sender">Google Drive Team</td>
+                                                        <td data-title="Subject">Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)</td>
+                                                        <td data-title="Attach"></td>
+                                                        <td data-title="Date">28 Aug</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox40" type="checkbox">
+                                                                <label for="checkbox40">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td data-title="Sender">Death to Stock</td>
+                                                        <td data-title="Subject">Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)</td>
+                                                        <td data-title="Attach">
+                                                            <i class="fa fa-paperclip fa-lg"></i>
+                                                        </td>
+                                                        <td data-title="Date">18 Aug</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox25" type="checkbox">
+                                                                <label for="checkbox25">
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td data-title="Sender">Lucas Kriebel (via Twitter)</td>
+                                                        <td data-title="Subject">Lucas Kriebel (@LucasKriebel) has sent you a direct message on Twitter!</td>
+                                                        <td data-title="Attach"></td>
+                                                        <td data-title="Date">11 May</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox61" type="checkbox">
+                                                                <label for="checkbox61">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td data-title="Sender">Google Drive Team</td>
+                                                        <td data-title="Subject">Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)</td>
+                                                        <td data-title="Attach"></td>
+                                                        <td data-title="Date">15 July</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox50" type="checkbox">
+                                                                <label for="checkbox50">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td data-title="Sender">Peter, me (3)</td>
+                                                        <td data-title="Subject">Since you asked... and i'm inconceivably bored at the train station – </td>
+                                                        <td data-title="Attach"></td>
+                                                        <td data-title="Date">5 July</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox26" type="checkbox">
+                                                                <label for="checkbox26">
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td data-title="Sender">Lucas Kriebel (via Twitter)</td>
+                                                        <td data-title="Subject">Lucas Kriebel (@LucasKriebel) has sent you a direct message on Twitter!</td>
+                                                        <td data-title="Attach">
+                                                            <i class="fa fa-paperclip fa-lg"></i>
+                                                        </td>
+                                                        <td data-title="Date">4 July</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox27" type="checkbox">
+                                                                <label for="checkbox27">
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td data-title="Sender">Lucas Kriebel (via Twitter)</td>
+                                                        <td data-title="Subject">Lucas Kriebel (@LucasKriebel) has sent you a direct message on Twitter!</td>
+                                                        <td data-title="Attach">
+                                                            <i class="fa fa-paperclip fa-lg"></i>
+                                                        </td>
+                                                        <td data-title="Date">4 July</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox28" type="checkbox">
+                                                                <label for="checkbox28">
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td data-title="Sender">Lucas Kriebel (via Twitter)</td>
+                                                        <td data-title="Subject">Lucas Kriebel (@LucasKriebel) has sent you a direct message on Twitter!</td>
+                                                        <td data-title="Attach"></td>
+                                                        <td data-title="Date">3 July</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox64" type="checkbox">
+                                                                <label for="checkbox64">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td data-title="Sender">Google Drive Team</td>
+                                                        <td data-title="Subject">Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)</td>
+                                                        <td data-title="Attach"></td>
+                                                        <td data-title="Date">1 July</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox29" type="checkbox">
+                                                                <label for="checkbox29">
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td data-title="Sender">Lucas Kriebel (via Twitter)</td>
+                                                        <td data-title="Subject">Lucas Kriebel (@LucasKriebel) has sent you a direct message on Twitter!</td>
+                                                        <td data-title="Attach"></td>
+                                                        <td data-title="Date">12 Feb</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox33" type="checkbox">
+                                                                <label for="checkbox33">
+                                                                </label>
+                                                            </div>
+                                                        </th>
+                                                        <td data-title="Sender">Lucas Kriebel (via Twitter)</td>
+                                                        <td data-title="Subject">Lucas Kriebel (@LucasKriebel) has sent you a direct message on Twitter!</td>
+                                                        <td data-title="Attach"></td>
+                                                        <td data-title="Date">11 Feb</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="center">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox66" type="checkbox">
+                                                                <label for="checkbox66">
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td data-title="Sender">Google Drive Team</td>
+                                                        <td data-title="Subject">Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)</td>
+                                                        <td data-title="Attach"></td>
+                                                        <td data-title="Date">10 Feb</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- /end .res-table -->
+                                        <a href="#" class="load-more-link">Show more messages</a>
+                                    </div>
+                                </div>
+                                <!-- /end Mail list grid -->
+                        
+                                <!-- Mail Message -->
+                                <div class="email-message col-md-9" style="display:none;">
+                                    <div class="header">
+                                        <h4 class="page-title">
+                                            <b>
+                                            <a class="icon square-icon glyphicon glyphicon-chevron-left trigger-message-close"></a>Last pic over my village
+                                            <span class="grey">(2)</span>
+                                            </b>
+                                        </h4>
+                                        <p>From
+                                            <a href="#">Scott Waite</a> to
+                                            <a href="#">me</a>, started on
+                                            <a href="#">March 2, 2014</a> at 2:14 pm est.</p>
+                                    </div>
+                                    <ul class="message-container">
+                                        <li class="received">
+                                            <div class="details">
+                                                <div class="left">
+                                                    <strong>Scott</strong>
+                                                    <i class="fa fa-arrow-right"></i> me, john</div>
+                                                <div class="right">March 6, 2014, 20:08 pm</div>
+                                            </div>
+                                        </li>
+                                        <li class="sent">
+                                            <div class="details">
+                                                <div class="left">
+                                                    <strong>Scott</strong>
+                                                    <i class="fa fa-arrow-right"></i> me, john</div>
+                                                <div class="right">March 6, 2014, 20:08 pm</div>
+                                            </div>
+                                            <div class="message">
+                                                <p>Lorem ipsum dolor sit amet, duo in quis euripidis, labores posidonium te ius. Ad modo dicant soleat
+                                                    vix, nam ad postea accommodare. Ne natum volumus pri. Adhuc tation id his. Ludus omnesque ea
+                                                    est, alterum fabulas delectus ad pro, quo debet nominavi abhorreant ut.</p>
+                                                <p>Recusabo urbanitas reformidans sit ut, te mea duis impetus percipitur. Te sanctus partiendo intellegam
+                                                    pri. Tantas postea graeci pro ex, eius dicit concludaturque eu nam. Vel dicam causae luptatum
+                                                    ut.</p>
+                                            </div>
+                                            <div class="col-md-3 inline-left">
+                                                <div class="well well-sm">
+                                                    <img src="../assets/img/gallery/a1.jpg" alt="" class=" img-responsive">
+                                                    <strong>catpic.jpg</strong>
+                                                    <span class="block">700kb</span>
+                                                    <a href="#">Download</a>
+                                                    <a href="#">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 inline-left">
+                                                <div class="well well-sm">
+                                                    <img src="../assets/img/gallery/a2.jpg" alt="" class=" img-responsive">
+                                                    <strong>catpic.jpg</strong>
+                                                    <span class="block">700kb</span>
+                                                    <a href="" class="padding-r-10">Download</a>
+                                                    <a href="#">View</a>
+                                                </div>
+                                            </div>
+                                            <div class="tool-box">
+                                                <a href="#" class="square-icon small glyphicon glyphicon-share-alt"></a>
+                                                <a href="#" class="square-icon small red-hover glyphicon glyphicon-remove"></a>
+                                                <a href="#" class="square-icon small red-hover glyphicon glyphicon-flag"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /end Mail Message -->
+                        
+                                <!-- Mail Compose -->
+                                <div class="email-compose col-md-9" style="display:none;">
+                                    <header class="header">
+                                        <div class="action-compose">
+                                            <a href="" class="btn btn-success">Send</a>
+                                            <a href="" class="btn btn-default">Save Draft</a>
+                                        </div>
+                                        <h1 class="page-title">
+                                            <a class="icon square-icon glyphicon glyphicon-chevron-left trigger-message-close"></a>
+                                            Compose Mail
+                                        </h1>
+                                    </header>
+                                    <div class="to-mail">
+                                        <form>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        To:
+                                                        <span class="symbol required"></span>
+                                                    </label>
+                                                    <span class="input-icon">
+                                                        <input type="text" placeholder="user@example.com" class="form-control">
+                                                        <i class="fa fa-user"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                        
+                        
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">
+                                                        Subject:
+                                                        <span class="symbol required"></span>
+                                                    </label>
+                                                    <span class="input-icon">
+                                                        <input type="text" placeholder="Subject" class="form-control">
+                                                        <i class="fa fa-comment"></i>
+                                                    </span>
+                                                </div>
+                                                <!-- summernote section -->
+                                                <div id="summernote">Description Sample</div>
+                                            </div>
+                        
+                                            <div class="col-md-6">
+                                                <label>Attachment:</label>
+                                                <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                                    <div class="form-control" data-trigger="fileinput">
+                                                        <i class="glyphicon glyphicon-file fileinput-exists"></i>
+                                                        <span class="fileinput-filename"></span>
+                                                    </div>
+                                                    <span class="input-group-addon btn btn-default btn-file">
+                                                        <span class="fileinput-new">Select file</span>
+                                                        <span class="fileinput-exists">Change</span>
+                                                        <input type="file" name="...">
+                                                    </span>
+                                                    <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 footer">
+                                                <button class="btn btn-success">Send</button>
+                                                <button class="btn btn-default">Save Draft</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- /end Mail Compose -->
+                        
+                            </div>
+                        </div>
+                        <!-- end panel -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chart JS -->
+<script src="../assets/js/plugins/chartjs.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="../assets/js/now-ui-dashboard.js?v=1.0.1"></script>
+<script src="../assets/js/now-ui-kit.js"></script>
+<script src="../assets/js/custom.js"></script>
+<!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+<script src="../assets/demo/demo.js"></script>
+
+<!-- Bootstrap Plugins -->
+<script type="text/javascript" src="../assets/plugins/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="../assets/plugins/bootstrap-switch.js"></script>
+<script type="text/javascript" src="../assets/plugins/jquery.sharrre.js"></script>
+<script type="text/javascript" src="../assets/plugins/nouislider.min.js"></script>
+
+<!-- Related JavaScript Library to This Pagee -->
+<script type="text/javascript" src="../assets/vendors/summernote/js/summernote.min.js"></script>
+<script type="text/javascript" src="../assets/vendors/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+<!-- Use for input mask -->
+
+
+        <!-- Plugins Script -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                // Summernote Script
+                $('#summernote').summernote({
+                    height: 350,   //set editable area's height
+                    codemirror: { // codemirror options
+                        theme: 'monokai'
+                    }
+                });
+
+                /*
+                 * Email Page
+                 */
+                var showMessage = function () {
+                    $('.email-list').hide();
+                    $('.email-compose').hide();
+                    $('.email-message').show();
+                }
+                var showCompose = function () {
+                    $('.email-list').hide();
+                    $('.email-message').hide();
+                    $('.email-compose').show();
+                }
+                var showList = function () {
+                    $('.email-message').hide();
+                    $('.email-compose').hide();
+                    $('.email-list').show();
+                }
+                $(".compose-btn").on('click', function () {
+                    showCompose();
+                })
+
+                $("table").on('click', 'tr', function () {
+                    showMessage();
+                    // alert('asdasd');
+                })
+
+                $('#inbox').on('click', function () {
+                    showList();
+                })
+
+                $('.trigger-message-close').on('click', function () {
+                    showList();
+                })
+            });
+        </script>
+
+
+</html>
